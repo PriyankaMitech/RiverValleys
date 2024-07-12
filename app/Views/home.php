@@ -1,34 +1,6 @@
-<?php include 'header.php'; ?>\
-<style>
-    .banner {
-    background-size: cover;
-    background-position: center;
-    height: 170px; /* Adjust height as needed */
-    display: flex;
-    align-items: center;
-    margin-top: 0px;
-}
 
-.banner_item.single-background {
-    width: 100%;
-}
-
-.banner_categories {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
-
-.banner_category a {
-
-    font-size: 20px; /* Adjust font size as needed */
-    text-decoration: none;
- 
-    border-radius: 5px; /* Optional: add border radius */
-}
-
-</style>
-
+<?php include 'header.php'; ?>
+<link rel="stylesheet" type="text/css" href="public/assets/styles/home.css">
 <div class="fs_menu_overlay"></div>
 <div class="hamburger_menu">
     <div class="hamburger_close"><i class="fa fa-times" aria-hidden="true"></i></div>
@@ -79,23 +51,54 @@
 </div>
 
 <!-- Slider -->
-
-<div class="main_slider" style="background-image:url(http://localhost/RiverValleys/public/assets/images/R3.jpg)">
-    <div class="container fill_height">
-        <div class="row align-items-center fill_height">
-            <div class="col">
-                <div class="main_slider_content">
-                    <h1>Get up to 30% Off New Arrivals</h1>
-                    <div class="red_button shop_now_button"><a href="#">shop now</a></div>
+<div class="banner_container" style="position: relative;">
+    <div class="main_slider"
+        style="background-image:url(http://localhost/RiverValleys/public/assets/images/R3.jpg); position: relative;">
+        <div class="container fill_height">
+            <div class="row align-items-center fill_height">
+                <div class="col">
+                    <div class="main_slider_content">
+                        <h1 class="text1">Get up to 30% Off New Arrivals</h1>
+                        <div class="red_button shop_now_button"><a href="#">shop now</a></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="main_slider2"
+        style="background-image:url(http://localhost/RiverValleys/public/assets/images/RV12.jpg); position: relative;">
+        <div class="container fill_height">
+            <div class="row align-items-center fill_height">
+                <div class="col">
+                    <div class="main_slider_content">
+                        <img src="http://localhost/RiverValleys/public/assets/images/RV11.png"
+                            class="heading_center_image" alt="New Image">
+                        <h1 class="centered_text">Hot Categories</h1>
+                        <!-- <div class="red_button shop_now_button"><a href="#">shop now</a></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="http://localhost/RiverValleys/public/assets/images/RV6.png" class="top_right_image" alt="New Image">
+        <img src="http://localhost/RiverValleys/public/assets/images/RV7.png" class="top_left_image"
+            alt="New Image Left">
+    </div>
+    <div class="center_images_container">
+        <img src="http://localhost/RiverValleys/public/assets/images/RV13.avif" class="center_images image1" alt="Center Image 1">
+        <img src="http://localhost/RiverValleys/public/assets/images/RV14.avif" class="center_images image2" alt="Center Image 2">
+        <img src="http://localhost/RiverValleys/public/assets/images/RV15.avif" class="center_images image3" alt="Center Image 3">
+    </div>
+
+    <img src="http://localhost/RiverValleys/public/assets/images/RV10.jpg" class="center_image" alt="Center Image">
+    <img src="http://localhost/RiverValleys/public/assets/images/RV8.jpg" class="center_image2" alt="Center Image 2">
 </div>
 
-<!-- Banner -->
 
-<div class="banner" style="background-image:url('http://localhost/RiverValleys/public/assets/images/R7.jpg');">
+
+
+
+<!-- <div class="banner" style="background-image:url('http://localhost/RiverValleys/public/assets/images/R7.jpg');">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -115,7 +118,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 
 <!-- New Arrivals -->
