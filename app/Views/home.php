@@ -1,3 +1,4 @@
+
 <?php include 'header.php'; ?>
 <link rel="stylesheet" type="text/css" href="public/assets/styles/home.css">
 <div class="fs_menu_overlay"></div>
@@ -766,4 +767,5 @@
         </div>
     </div>
 </div>
+
 <?php include 'footer.php'; ?>

@@ -27,5 +27,8 @@ class Home extends BaseController
         {
             return view('category');
         }
-    
+    public function admindashboard() 
+    {
+        return view('Admin/admindashboard');
+    }
 }
