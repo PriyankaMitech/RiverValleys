@@ -85,16 +85,45 @@
             alt="New Image Left">
     </div>
     <div class="center_images_container">
-        <img src="http://localhost/RiverValleys/public/assets/images/RV13.avif" class="center_images image1" alt="Center Image 1">
-        <img src="http://localhost/RiverValleys/public/assets/images/RV14.avif" class="center_images image2" alt="Center Image 2">
-        <img src="http://localhost/RiverValleys/public/assets/images/RV15.avif" class="center_images image3" alt="Center Image 3">
+        <img src="http://localhost/RiverValleys/public/assets/images/RV13.avif" class="center_images image1"
+            alt="Center Image 1">
+        <img src="http://localhost/RiverValleys/public/assets/images/RV14.avif" class="center_images image2"
+            alt="Center Image 2">
+        <img src="http://localhost/RiverValleys/public/assets/images/RV15.avif" class="center_images image3"
+            alt="Center Image 3">
     </div>
 
     <img src="http://localhost/RiverValleys/public/assets/images/RV10.jpg" class="center_image" alt="Center Image">
     <img src="http://localhost/RiverValleys/public/assets/images/RV8.jpg" class="center_image2" alt="Center Image 2">
 </div>
 
-
+<div class="main_slider3">
+    <div class="container fill_height">
+        <div class="row align-items-center fill_height">
+            <div class="col">
+                <div class="main_slider_content2">
+                    <img src="http://localhost/RiverValleys/public/assets/images/RV11.png" class="heading_center_image2"
+                        alt="New Image">
+                    <h1 class="centered_text2">Single Product</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="http://localhost/RiverValleys/public/assets/images/RV18.png" class="top_right_image" alt="New Image">
+    <img src="http://localhost/RiverValleys/public/assets/images/RV19.png" class="top_left_image" alt="New Image Left">
+    <div class="center_images_container22">
+        <img src="http://localhost/RiverValleys/public/assets/images/RV23.avif" class="center_image22 image22"
+            alt="Center Image 22">
+    </div>
+    <div class="center_images_container2">
+        <img src="http://localhost/RiverValleys/public/assets/images/RV24.avif" class="center_image21 image21"
+            alt="Center Image 21">
+    </div>
+    <div class="center_images_container4">
+        <img src="http://localhost/RiverValleys/public/assets/images/RV25.avif" class="center_image23 image23"
+            alt="Center Image 23">
+    </div>
+</div>
 
 
 
