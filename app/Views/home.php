@@ -28,6 +28,7 @@
 }
 
 </style>
+
 <div class="fs_menu_overlay"></div>
 <div class="hamburger_menu">
     <div class="hamburger_close"><i class="fa fa-times" aria-hidden="true"></i></div>
@@ -763,4 +764,5 @@
         </div>
     </div>
 </div>
+
 <?php include 'footer.php'; ?>
