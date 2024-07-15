@@ -1,4 +1,3 @@
-
 <?php include 'header.php'; ?>
 <link rel="stylesheet" type="text/css" href="public/assets/styles/home.css">
 <div class="fs_menu_overlay"></div>
@@ -124,41 +123,13 @@
             alt="Center Image 23">
     </div>
 </div>
-
-
-
-<!-- <div class="banner" style="background-image:url('http://localhost/RiverValleys/public/assets/images/R7.jpg');">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="banner_item align-items-center single-background">
-                    <div class="banner_categories">
-                        <div class="banner_category">
-                            <a href="categories.html">women's</a>
-                        </div>
-                        <div class="banner_category">
-                            <a href="categories.html">accessories</a>
-                        </div>
-                        <div class="banner_category">
-                            <a href="categories.html">men's</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-
-
-<!-- New Arrivals -->
-
 <div class="new_arrivals">
     <div class="container">
         <div class="row">
-            <div class="col text-center">
-                <div class="section_title new_arrivals_title">
-                    <h2>New Arrivals</h2>
-                </div>
+            <div class="main_slider_content2">
+                <img src="http://localhost/RiverValleys/public/assets/images/RV11.png" class="heading_center_image3"
+                    alt="New Image">
+                <h1 class="centered_text3">Mixed Product</h1>
             </div>
         </div>
         <div class="row align-items-center">
@@ -182,11 +153,10 @@
                 <div class="product-grid" data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows" }'>
 
                     <!-- Product 1 -->
-
                     <div class="product-item men">
                         <div class="product discount product_filter">
                             <div class="product_image">
-                                <img src="public/assets/images/product_1.png" alt="">
+                                <img src="public/assets/images/MakeUpForever.png" alt="">
                             </div>
                             <div class="favorite favorite_left"></div>
                             <div
@@ -202,15 +172,13 @@
                         <div class="red_button add_to_cart_button">
                             <a href="<?php echo base_url('addtocart?id=1'); ?>">add to cart</a>
                         </div>
-
                     </div>
 
                     <!-- Product 2 -->
-
                     <div class="product-item women">
                         <div class="product product_filter">
                             <div class="product_image">
-                                <img src="public/assets/images/product_2.png" alt="">
+                                <img src="public/assets/images/ULTRAHDSTICKFOUNDATION.webp" alt="">
                             </div>
                             <div class="favorite"></div>
                             <div
@@ -226,15 +194,13 @@
                         <div class="red_button add_to_cart_button">
                             <a href="<?php echo base_url('addtocart?id=1'); ?>">add to cart</a>
                         </div>
-
                     </div>
 
                     <!-- Product 3 -->
-
                     <div class="product-item women">
                         <div class="product product_filter">
                             <div class="product_image">
-                                <img src="public/assets/images/product_3.png" alt="">
+                                <img src="public/assets/images/Coverfx.jpg" alt="">
                             </div>
                             <div class="favorite"></div>
                             <div class="product_info">
@@ -246,15 +212,13 @@
                         <div class="red_button add_to_cart_button">
                             <a href="<?php echo base_url('addtocart?id=1'); ?>">add to cart</a>
                         </div>
-
                     </div>
 
                     <!-- Product 4 -->
-
                     <div class="product-item accessories">
                         <div class="product product_filter">
                             <div class="product_image">
-                                <img src="public/assets/images/product_4.png" alt="">
+                                <img src="public/assets/images/Foundation.jpg" alt="">
                             </div>
                             <div
                                 class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center">
@@ -270,15 +234,13 @@
                         <div class="red_button add_to_cart_button">
                             <a href="<?php echo base_url('addtocart?id=1'); ?>">add to cart</a>
                         </div>
-
                     </div>
 
                     <!-- Product 5 -->
-
                     <div class="product-item women men">
                         <div class="product product_filter">
                             <div class="product_image">
-                                <img src="public/assets/images/product_5.png" alt="">
+                                <img src="public/assets/images/penny.webp" alt="">
                             </div>
                             <div class="favorite"></div>
                             <div class="product_info">
@@ -290,15 +252,13 @@
                         <div class="red_button add_to_cart_button">
                             <a href="<?php echo base_url('addtocart?id=1'); ?>">add to cart</a>
                         </div>
-
                     </div>
 
                     <!-- Product 6 -->
-
                     <div class="product-item accessories">
                         <div class="product discount product_filter">
                             <div class="product_image">
-                                <img src="public/assets/images/product_6.png" alt="">
+                                <img src="public/assets/images/ULTRAHDSTICKFOUNDATION.webp" alt="">
                             </div>
                             <div class="favorite favorite_left"></div>
                             <div
@@ -314,15 +274,13 @@
                         <div class="red_button add_to_cart_button">
                             <a href="<?php echo base_url('addtocart?id=1'); ?>">add to cart</a>
                         </div>
-
                     </div>
 
                     <!-- Product 7 -->
-
                     <div class="product-item women">
                         <div class="product product_filter">
                             <div class="product_image">
-                                <img src="public/assets/images/product_7.png" alt="">
+                                <img src="public/assets/images/penny.webp" alt="">
                             </div>
                             <div class="favorite"></div>
                             <div class="product_info">
@@ -334,15 +292,13 @@
                         <div class="red_button add_to_cart_button">
                             <a href="<?php echo base_url('addtocart?id=1'); ?>">add to cart</a>
                         </div>
-
                     </div>
 
                     <!-- Product 8 -->
-
                     <div class="product-item accessories">
                         <div class="product product_filter">
                             <div class="product_image">
-                                <img src="public/assets/images/product_8.png" alt="">
+                                <img src="public/assets/images/Foundation.jpg" alt="">
                             </div>
                             <div class="favorite"></div>
                             <div class="product_info">
@@ -354,15 +310,13 @@
                         <div class="red_button add_to_cart_button">
                             <a href="<?php echo base_url('addtocart?id=1'); ?>">add to cart</a>
                         </div>
-
                     </div>
 
                     <!-- Product 9 -->
-
                     <div class="product-item men">
                         <div class="product product_filter">
                             <div class="product_image">
-                                <img src="public/assets/images/product_9.png" alt="">
+                                <img src="public/assets/images/Coverfx.jpg" alt="">
                             </div>
                             <div
                                 class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center">
@@ -378,15 +332,13 @@
                         <div class="red_button add_to_cart_button">
                             <a href="<?php echo base_url('addtocart?id=1'); ?>">add to cart</a>
                         </div>
-
                     </div>
 
                     <!-- Product 10 -->
-
                     <div class="product-item men">
                         <div class="product product_filter">
                             <div class="product_image">
-                                <img src="public/assets/images/product_10.png" alt="">
+                                <img src="public/assets/images/MakeUpForever.png" alt="">
                             </div>
                             <div class="favorite"></div>
                             <div class="product_info">
@@ -398,55 +350,28 @@
                         <div class="red_button add_to_cart_button">
                             <a href="<?php echo base_url('addtocart?id=1'); ?>">add to cart</a>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
+        <img src="http://localhost/RiverValleys/public/assets/images/RV30.png" alt="Right Corner Image"
+            class="corner_image top_right_image30">
+        <img src="http://localhost/RiverValleys/public/assets/images/RV31.png" alt="Left Corner Image"
+            class="corner_image top_left_image31">
     </div>
 </div>
 
-<!-- Deal of the week -->
+<!-- Brand Section -->
 
-<div class="deal_ofthe_week">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="deal_ofthe_week_img">
-                    <img src="public/assets/images/deal_ofthe_week.png" alt="">
-                </div>
-            </div>
-            <div class="col-lg-6 text-right deal_ofthe_week_col">
-                <div class="deal_ofthe_week_content d-flex flex-column align-items-center float-right">
-                    <div class="section_title">
-                        <h2>Deal Of The Week</h2>
-                    </div>
-                    <ul class="timer">
-                        <li class="d-inline-flex flex-column justify-content-center align-items-center">
-                            <div id="day" class="timer_num">03</div>
-                            <div class="timer_unit">Day</div>
-                        </li>
-                        <li class="d-inline-flex flex-column justify-content-center align-items-center">
-                            <div id="hour" class="timer_num">15</div>
-                            <div class="timer_unit">Hours</div>
-                        </li>
-                        <li class="d-inline-flex flex-column justify-content-center align-items-center">
-                            <div id="minute" class="timer_num">45</div>
-                            <div class="timer_unit">Mins</div>
-                        </li>
-                        <li class="d-inline-flex flex-column justify-content-center align-items-center">
-                            <div id="second" class="timer_num">23</div>
-                            <div class="timer_unit">Sec</div>
-                        </li>
-                    </ul>
-                    <div class="red_button deal_ofthe_week_button"><a href="#">shop now</a></div>
-                </div>
-            </div>
-        </div>
+<div class="brand_section">
+    <div class="brand_slider">
+        <div class="brand_item"><img src="public/assets/images/brand1.png" alt="Brand 1"></div>
+        <div class="brand_item"><img src="public/assets/images/brand2.png" alt="Brand 2"></div>
+        <div class="brand_item"><img src="public/assets/images/brand3.webp" alt="Brand 3"></div>
+        <div class="brand_item"><img src="public/assets/images/brand4.png" alt="Brand 4"></div>
+        <div class="brand_item"><img src="public/assets/images/brand5.png" alt="Brand 5"></div>
     </div>
 </div>
-
-<!-- Best Sellers -->
 
 <div class="best_sellers">
     <div class="container">
