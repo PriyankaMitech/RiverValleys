@@ -290,3 +290,8 @@
         transform: translateX(-100%);
     }
 }
+.product_image img {
+    display: block; /* Ensure images behave as block elements */
+    width: 100%; /* Ensure images take full width of their container */
+    margin-bottom: 20px; /* Example margin to create space below each image */
+}
