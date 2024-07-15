@@ -197,7 +197,7 @@
             </li>
             <li class="dropdown">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="briefcase"></i><span>Orders</span></a>
+                  data-feather="shopping-bag"></i><span>Orders</span></a>
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="widget-chart.html">Pending orders</a></li>
                 <li><a class="nav-link" href="widget-data.html">Delivered orders </a></li>
@@ -207,7 +207,7 @@
             </li>
             <li class="dropdown">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="briefcase"></i><span>Report</span></a>
+                  data-feather="command"></i><span>Report</span></a>
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="widget-chart.html">customer report</a></li>
                 <li><a class="nav-link" href="widget-data.html">orders report</a></li>
@@ -216,7 +216,7 @@
             </li>
             <li class="dropdown">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="briefcase"></i><span>Customer Management</span></a>
+                  data-feather="pie-chart"></i><span>Customer Management</span></a>
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="widget-chart.html">Profiles</a></li>
                 <li><a class="nav-link" href="widget-data.html">Customer Support</a></li>
@@ -225,7 +225,7 @@
             </li>
             <li class="dropdown">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="briefcase"></i><span>Sales and Analytics</span></a>
+                  data-feather="mail"></i><span>Sales and Analytics</span></a>
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="widget-chart.html">Sales Reports</a></li>
                 <li><a class="nav-link" href="widget-data.html">Customer Analytics</a></li>
@@ -235,7 +235,7 @@
             </li>
             <li class="dropdown">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="briefcase"></i><span>Content Managements</span></a>
+                  data-feather="feather"></i><span>Content Managements</span></a>
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="widget-chart.html">Manage Pages</a></li>
                 <li><a class="nav-link" href="widget-data.html">Blog Management</a></li>
@@ -244,7 +244,7 @@
             </li>
             <li class="dropdown">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="briefcase"></i><span>Marketing and Promotions</span></a>
+                  data-feather="alert-triangle"></i><span>Marketing and Promotions</span></a>
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="widget-chart.html">Discount Codes</a></li>
                 <li><a class="nav-link" href="widget-data.html">Email Campaigns</a></li>
@@ -254,7 +254,7 @@
             </li>
             <li class="dropdown">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="briefcase"></i><span>Settings and Configuration</span></a>
+                  data-feather="anchor"></i><span>Settings and Configuration</span></a>
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="widget-chart.html">Payment Gateway Integration</a></li>
                 <li><a class="nav-link" href="widget-data.html">Shipping Options</a></li>
@@ -264,7 +264,7 @@
             </li>
             <li class="dropdown">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="briefcase"></i><span>Security and Compliance</span></a>
+                  data-feather="command"></i><span>Security and Compliance</span></a>
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="widget-chart.html">User Activity Logs</a></li>
                 <li><a class="nav-link" href="widget-data.html">Data Privacy</a></li>
@@ -273,7 +273,7 @@
             </li>
             <li class="dropdown">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="briefcase"></i><span>Support and Maintenance</span></a>
+                  data-feather="feather"></i><span>Support and Maintenance</span></a>
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="widget-chart.html">Technical Support</a></li>
                 <li><a class="nav-link" href="widget-data.html">System Updates</a></li>
