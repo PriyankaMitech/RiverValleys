@@ -18,7 +18,7 @@
 </head>
 
 <body>
-<div id="flash-success-container"  class="flash-message">
+   <div id="flash-success-container"  class="flash-message">
         <?php if (session()->has('success')) : ?>
         <div class="flash-success">
             <?= session('success') ?>
