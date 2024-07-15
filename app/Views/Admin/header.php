@@ -103,6 +103,7 @@
                 </ul>
             </li>
             <li class="dropdown">
+
                 <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="shopping-cart"></i><span>Orders</span></a>
                 <ul class="dropdown-menu">
                     <li><a class="nav-link" href="widget-chart.html">Pending orders</a></li>
@@ -176,6 +177,7 @@
                     <li><a class="nav-link" href="widget-chart.html">Technical Support</a></li>
                     <li><a class="nav-link" href="widget-data.html">System Updates</a></li>
                 </ul>
+
             </li>
         </ul>
     </aside>

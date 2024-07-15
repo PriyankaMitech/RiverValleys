@@ -81,6 +81,7 @@
     <script src="public/assets/plugins/Isotope/isotope.pkgd.min.js"></script>
     <script src="public/assets/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
     <script src="public/assets/plugins/easing/easing.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="public/assets/js/custom.js"></script>
+    
 </body>
 </html>
