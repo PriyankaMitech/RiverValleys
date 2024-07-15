@@ -59,7 +59,7 @@ class Home extends BaseController
 
 
     }
-    public function set_menu()
+    public function setmenu()
     {
         $menu_name = $this->request->getVar('menu_name');
         $url_location = $this->request->getVar('url_location');
@@ -77,7 +77,7 @@ class Home extends BaseController
             ->getFirstRow();
         if ($existingMenu && ($this->request->getVar('id') == "" || $existingMenu->id != $this->request->getVar('id'))) {
             session()->setFlashdata('error', 'Menu name and URL location combination already exists.');
-            return redirect()->to('menu-list'); 
+            return redirect()->to('menulist'); 
         }
 
         if ($this->request->getVar('id') == "") {
@@ -88,7 +88,7 @@ class Home extends BaseController
             session()->setFlashdata('success', 'Menu updated successfully.');
         }
 
-        return redirect()->to('menu-list');
+        return redirect()->to('menulist');
     }
 
     public function delete()

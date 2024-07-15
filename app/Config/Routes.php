@@ -19,10 +19,10 @@ $routes->get('delete/(:any)/(:any)', 'Home::delete/$1/$1');
 
 // Add Menu, set Menu and Get Menu List 
 
-$routes->get('menu-list', 'Home::get_menu_list');
-$routes->get('edit-menu/(:any)', 'Home::get_menu_list/$1');
+$routes->get('menulist', 'Home::get_menu_list');
+$routes->get('editmenu/(:any)', 'Home::get_menu_list/$1');
 
-$routes->post('set_menu', 'Home::set_menu');
+$routes->post('setmenu', 'Home::setmenu');
 
 
 

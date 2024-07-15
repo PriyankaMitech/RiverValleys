@@ -1,10 +1,10 @@
 <?php include __DIR__.'/../Admin/adminsidebar.php'; ?>
 
 <?php
-// Detect if URL contains '/edit-menu/1'
+// Detect if URL contains '/editmenu/1'
 $showForm = false;
 $current_url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-if (strpos($current_url, 'edit-menu') !== false) {
+if (strpos($current_url, 'editmenu') !== false) {
     $showForm = true;
 }
 ?>
@@ -16,7 +16,7 @@ if (strpos($current_url, 'edit-menu') !== false) {
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-12">
                     <?php if($showForm) { ?>
-                        <a id="viewCreateMenuBtn" class="btn btn-info mt-2" href="<?=base_url(); ?>menu-list">Menu List</a>
+                        <a id="viewCreateMenuBtn" class="btn btn-info mt-2" href="<?=base_url(); ?>menulist">Menu List</a>
 
                     <?php }else{ ?>
                         <button id="viewCreateMenuBtn" class="btn btn-info mt-2">Add Menu</button>
@@ -48,7 +48,7 @@ if (strpos($current_url, 'edit-menu') !== false) {
                                                 <td><?= $data->menu_name; ?></td>
                                                 <td><?= $data->url_location; ?></td>
                                                 <td>
-                                                    <a href="edit-menu/<?= $data->id; ?>"><i class="far fa-edit me-2"></i></a>
+                                                    <a href="editmenu/<?= $data->id; ?>"><i class="far fa-edit me-2"></i></a>
                                                     <a href="<?= base_url(); ?>delete/<?= $data->id; ?>/tbl_menu" onclick="return confirm('Are You Sure You Want To Delete This Record?')"><i class="far fa-trash-alt me-2"></i></a>
                                                 </td>
                                             </tr>
@@ -65,7 +65,7 @@ if (strpos($current_url, 'edit-menu') !== false) {
                         <div class="card-header">
                             <h3 class="card-title">Add Menu</h3>
                         </div>
-                        <form action="<?php echo base_url(); ?>set_menu" method="post" id="add_menu_form">
+                        <form action="<?php echo base_url(); ?>setmenu" method="post" id="add_menu_form">
                             <div class="row card-body">
                                 <input type="hidden" name="id" class="form-control" id="id" value="<?php if(!empty($single_data)){ echo $single_data->id;} ?>">
                                 <div class="col-lg-12 col-md-12 col-12 form-group">
