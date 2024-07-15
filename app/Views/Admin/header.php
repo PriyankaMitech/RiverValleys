@@ -18,6 +18,23 @@
 </head>
 
 <body>
+   <div id="flash-success-container"  class="flash-message">
+        <?php if (session()->has('success')) : ?>
+        <div class="flash-success">
+            <?= session('success') ?>
+        </div>
+        <?php endif; ?>
+    </div>
+    <?php if (session()->has('error')): ?>
+
+    <div id="toast-container" class="toast-top-right flash-message" >
+        <div class="toast toast-error" aria-live="assertive" style="">
+            <div class="toast-message">
+                <?= session('error') ?>
+            </div>
+        </div>
+    </div>
+    <?php endif ?>
   <div class="loader"></div>
   <div id="app">
     <div class="main-wrapper main-wrapper-1">
@@ -43,116 +60,7 @@
           </ul>
         </div>
         <ul class="navbar-nav navbar-right">
-          <!-- <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
-              class="nav-link nav-link-lg message-toggle"><i data-feather="mail"></i>
-              <span class="badge headerBadge1">
-                6 </span> </a>
-            <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
-              <div class="dropdown-header">
-                Messages
-                <div class="float-right">
-                  <a href="#">Mark All As Read</a>
-                </div>
-              </div>
-              <div class="dropdown-list-content dropdown-list-message">
-                <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar
-											text-white"> <img alt="image" src="<?=base_url(); ?>public/dashboard/img/users/user-1.png" class="rounded-circle">
-                  </span> <span class="dropdown-item-desc"> <span class="message-user">John
-                      Deo</span>
-                    <span class="time messege-text">Please check your mail !!</span>
-                    <span class="time">2 Min Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
-                    <img alt="image" src="<?=base_url(); ?>public/dashboard/img/users/user-2.png" class="rounded-circle">
-                  </span> <span class="dropdown-item-desc"> <span class="message-user">Sarah
-                      Smith</span> <span class="time messege-text">Request for leave
-                      application</span>
-                    <span class="time">5 Min Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
-                    <img alt="image" src="<?=base_url(); ?>public/dashboard/img/users/user-5.png" class="rounded-circle">
-                  </span> <span class="dropdown-item-desc"> <span class="message-user">Jacob
-                      Ryan</span> <span class="time messege-text">Your payment invoice is
-                      generated.</span> <span class="time">12 Min Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
-                    <img alt="image" src="<?=base_url(); ?>public/dashboard/img/users/user-4.png" class="rounded-circle">
-                  </span> <span class="dropdown-item-desc"> <span class="message-user">Lina
-                      Smith</span> <span class="time messege-text">hii John, I have upload
-                      doc
-                      related to task.</span> <span class="time">30
-                      Min Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
-                    <img alt="image" src="<?=base_url(); ?>public/dashboard/img/users/user-3.png" class="rounded-circle">
-                  </span> <span class="dropdown-item-desc"> <span class="message-user">Jalpa
-                      Joshi</span> <span class="time messege-text">Please do as specify.
-                      Let me
-                      know if you have any query.</span> <span class="time">1
-                      Days Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
-                    <img alt="image" src="<?=base_url(); ?>public/dashboard/img/users/user-2.png" class="rounded-circle">
-                  </span> <span class="dropdown-item-desc"> <span class="message-user">Sarah
-                      Smith</span> <span class="time messege-text">Client Requirements</span>
-                    <span class="time">2 Days Ago</span>
-                  </span>
-                </a>
-              </div>
-              <div class="dropdown-footer text-center">
-                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
-              </div>
-            </div>
-          </li> -->
-          <!-- <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
-              class="nav-link notification-toggle nav-link-lg"><i data-feather="bell" class="bell"></i>
-            </a>
-            <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
-              <div class="dropdown-header">
-                Notifications
-                <div class="float-right">
-                  <a href="#">Mark All As Read</a>
-                </div>
-              </div>
-              <div class="dropdown-list-content dropdown-list-icons">
-                <a href="#" class="dropdown-item dropdown-item-unread"> <span
-                    class="dropdown-item-icon bg-primary text-white"> <i class="fas
-												fa-code"></i>
-                  </span> <span class="dropdown-item-desc"> Template update is
-                    available now! <span class="time">2 Min
-                      Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-info text-white"> <i class="far
-												fa-user"></i>
-                  </span> <span class="dropdown-item-desc"> <b>You</b> and <b>Dedik
-                      Sugiharto</b> are now friends <span class="time">10 Hours
-                      Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-success text-white"> <i
-                      class="fas
-												fa-check"></i>
-                  </span> <span class="dropdown-item-desc"> <b>Kusnaedi</b> has
-                    moved task <b>Fix bug header</b> to <b>Done</b> <span class="time">12
-                      Hours
-                      Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-danger text-white"> <i
-                      class="fas fa-exclamation-triangle"></i>
-                  </span> <span class="dropdown-item-desc"> Low disk space. Let's
-                    clean it! <span class="time">17 Hours Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-info text-white"> <i class="fas
-												fa-bell"></i>
-                  </span> <span class="dropdown-item-desc"> Welcome to Otika
-                    template! <span class="time">Yesterday</span>
-                  </span>
-                </a>
-              </div>
-              <div class="dropdown-footer text-center">
-                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
-              </div>
-            </div>
-          </li> -->
+      
           <li class="dropdown"><a href="#" data-toggle="dropdown"
               class="nav-link dropdown-toggle nav-link-lg nav-link-user"> <img alt="image" src="<?=base_url(); ?>public/dashboard/img/user.png"
                 class="user-img-radious-style"> <span class="d-sm-none d-lg-inline-block"></span></a>
@@ -174,111 +82,103 @@
         </ul>
       </nav>
       <div class="main-sidebar sidebar-style-2">
-        <aside id="sidebar-wrapper">
-          <div class="sidebar-brand">
+    <aside id="sidebar-wrapper">
+        <div class="sidebar-brand">
             <a href="index.html"> <img alt="image" src="<?=base_url(); ?>public/dashboard/img/logo.png" class="header-logo" /> <span
                 class="logo-name">Otika</span>
             </a>
-          </div>
-          <ul class="sidebar-menu">
+        </div>
+        <ul class="sidebar-menu">
             <li class="menu-header">Main</li>
             <li class="dropdown active">
-              <a href="index.html" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
+                <a href="index.html" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
             </li>
             <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="briefcase"></i><span>Masters</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="widget-chart.html">User Create</a></li>
-                <li><a class="nav-link" href="widget-data.html">Edit User</a></li>
-                <li><a class="nav-link" href="widget-data.html">Add Product</a></li>
-                <li><a class="nav-link" href="widget-data.html">Edit Product</a></li>
-              </ul>
+            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="layers"></i><span>Masters</span></a>
+                <ul class="dropdown-menu">
+                    <li><a class="nav-link" href="widget-chart.html">User Create</a></li>
+                    <li><a class="nav-link" href="<?=base_url(); ?>menu-list">Menu</a></li>
+                    <li><a class="nav-link" href="widget-data.html">Add Product</a></li>
+                    <li><a class="nav-link" href="widget-data.html">Edit Product</a></li>
+                </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="shopping-bag"></i><span>Orders</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="widget-chart.html">Pending orders</a></li>
-                <li><a class="nav-link" href="widget-data.html">Delivered orders </a></li>
-                <li><a class="nav-link" href="widget-data.html">Undelivered orders</a></li>
-                <li><a class="nav-link" href="widget-data.html">Refunds Orders</a></li>
-              </ul>
+
+                <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="shopping-cart"></i><span>Orders</span></a>
+                <ul class="dropdown-menu">
+                    <li><a class="nav-link" href="widget-chart.html">Pending orders</a></li>
+                    <li><a class="nav-link" href="widget-data.html">Delivered orders</a></li>
+                    <li><a class="nav-link" href="widget-data.html">Undelivered orders</a></li>
+                    <li><a class="nav-link" href="widget-data.html">Refunds Orders</a></li>
+                </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="command"></i><span>Report</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="widget-chart.html">customer report</a></li>
-                <li><a class="nav-link" href="widget-data.html">orders report</a></li>
-                <li><a class="nav-link" href="widget-data.html">product report</a></li>
-              </ul>
+                <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="file-text"></i><span>Report</span></a>
+                <ul class="dropdown-menu">
+                    <li><a class="nav-link" href="widget-chart.html">Customer report</a></li>
+                    <li><a class="nav-link" href="widget-data.html">Orders report</a></li>
+                    <li><a class="nav-link" href="widget-data.html">Product report</a></li>
+                </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="pie-chart"></i><span>Customer Management</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="widget-chart.html">Profiles</a></li>
-                <li><a class="nav-link" href="widget-data.html">Customer Support</a></li>
-                <li><a class="nav-link" href="widget-data.html">Loyalty Programs</a></li>
-              </ul>
+                <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="user"></i><span>Customer Management</span></a>
+                <ul class="dropdown-menu">
+                    <li><a class="nav-link" href="widget-chart.html">Profiles</a></li>
+                    <li><a class="nav-link" href="widget-data.html">Customer Support</a></li>
+                    <li><a class="nav-link" href="widget-data.html">Loyalty Programs</a></li>
+                </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="mail"></i><span>Sales and Analytics</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="widget-chart.html">Sales Reports</a></li>
-                <li><a class="nav-link" href="widget-data.html">Customer Analytics</a></li>
-                <li><a class="nav-link" href="widget-data.html">Inventory Reports</a></li>
-                <li><a class="nav-link" href="widget-data.html">Order Statistics</a></li>
-              </ul>
+                <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="bar-chart-2"></i><span>Sales and Analytics</span></a>
+                <ul class="dropdown-menu">
+                    <li><a class="nav-link" href="widget-chart.html">Sales Reports</a></li>
+                    <li><a class="nav-link" href="widget-data.html">Customer Analytics</a></li>
+                    <li><a class="nav-link" href="widget-data.html">Inventory Reports</a></li>
+                    <li><a class="nav-link" href="widget-data.html">Order Statistics</a></li>
+                </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="feather"></i><span>Content Managements</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="widget-chart.html">Manage Pages</a></li>
-                <li><a class="nav-link" href="widget-data.html">Blog Management</a></li>
-                <li><a class="nav-link" href="widget-data.html">SEO Settings</a></li>
-              </ul>
+                <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="book"></i><span>Content Managements</span></a>
+                <ul class="dropdown-menu">
+                    <li><a class="nav-link" href="widget-chart.html">Manage Pages</a></li>
+                    <li><a class="nav-link" href="widget-data.html">Blog Management</a></li>
+                    <li><a class="nav-link" href="widget-data.html">SEO Settings</a></li>
+                </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="alert-triangle"></i><span>Marketing and Promotions</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="widget-chart.html">Discount Codes</a></li>
-                <li><a class="nav-link" href="widget-data.html">Email Campaigns</a></li>
-                <li><a class="nav-link" href="widget-data.html">Banner Management</a></li>
-                <li><a class="nav-link" href="widget-data.html">Affiliate Programs</a></li>
-              </ul>
+                <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="tag"></i><span>Marketing and Promotions</span></a>
+                <ul class="dropdown-menu">
+                    <li><a class="nav-link" href="widget-chart.html">Discount Codes</a></li>
+                    <li><a class="nav-link" href="widget-data.html">Email Campaigns</a></li>
+                    <li><a class="nav-link" href="widget-data.html">Banner Management</a></li>
+                    <li><a class="nav-link" href="widget-data.html">Affiliate Programs</a></li>
+                </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="anchor"></i><span>Settings and Configuration</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="widget-chart.html">Payment Gateway Integration</a></li>
-                <li><a class="nav-link" href="widget-data.html">Shipping Options</a></li>
-                <li><a class="nav-link" href="widget-data.html">Tax Settings</a></li>
-                <li><a class="nav-link" href="widget-data.html">Site Settings</a></li>
-              </ul>
+                <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="settings"></i><span>Settings and Configuration</span></a>
+                <ul class="dropdown-menu">
+                    <li><a class="nav-link" href="widget-chart.html">Payment Gateway Integration</a></li>
+                    <li><a class="nav-link" href="widget-data.html">Shipping Options</a></li>
+                    <li><a class="nav-link" href="widget-data.html">Tax Settings</a></li>
+                    <li><a class="nav-link" href="widget-data.html">Site Settings</a></li>
+                </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="command"></i><span>Security and Compliance</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="widget-chart.html">User Activity Logs</a></li>
-                <li><a class="nav-link" href="widget-data.html">Data Privacy</a></li>
-                <li><a class="nav-link" href="widget-data.html">Backup and Restore</a></li>
-              </ul>
+                <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="shield"></i><span>Security and Compliance</span></a>
+                <ul class="dropdown-menu">
+                    <li><a class="nav-link" href="widget-chart.html">User Activity Logs</a></li>
+                    <li><a class="nav-link" href="widget-data.html">Data Privacy</a></li>
+                    <li><a class="nav-link" href="widget-data.html">Backup and Restore</a></li>
+                </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="feather"></i><span>Support and Maintenance</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="widget-chart.html">Technical Support</a></li>
-                <li><a class="nav-link" href="widget-data.html">System Updates</a></li>
-              </ul>
+                <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="life-buoy"></i><span>Support and Maintenance</span></a>
+                <ul class="dropdown-menu">
+                    <li><a class="nav-link" href="widget-chart.html">Technical Support</a></li>
+                    <li><a class="nav-link" href="widget-data.html">System Updates</a></li>
+                </ul>
+
             </li>
-          </ul>
-        </aside>
-      </div>
+        </ul>
+    </aside>
+</div>

@@ -1,5 +1,5 @@
 
-<?php include __DIR__.'/../Admin/header.php'; ?>
+<?php include __DIR__.'/../Admin/adminsidebar.php'; ?>
 <div class="main-content">
         <section class="section">
           <div class="row ">
@@ -621,4 +621,4 @@
         </section>
        
       </div>
-      <?php include __DIR__.'/../Admin/footer.php'; ?>
+      <?php include __DIR__.'/../Admin/adminfooter.php'; ?>
