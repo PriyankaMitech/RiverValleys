@@ -4,7 +4,7 @@
 // Detect if URL contains '/edit-menu/1'
 $showForm = false;
 $current_url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-if (strpos($current_url, '/edit-menu/1') !== false) {
+if (strpos($current_url, 'edit-menu') !== false) {
     $showForm = true;
 }
 ?>
