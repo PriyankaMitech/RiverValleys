@@ -372,14 +372,13 @@
         <div class="brand_item"><img src="public/assets/images/brand5.png" alt="Brand 5"></div>
     </div>
 </div>
-
 <div class="best_sellers">
     <div class="container">
         <div class="row">
-            <div class="col text-center">
-                <div class="section_title new_arrivals_title">
-                    <h2>Best Sellers</h2>
-                </div>
+            <div class="main_slider_content2">
+                <img src="http://localhost/RiverValleys/public/assets/images/RV11.png" class="heading_center_image3"
+                    alt="New Image">
+                <h1 class="centered_text3">Local Product</h1>
             </div>
         </div>
         <div class="row">
@@ -388,208 +387,160 @@
                     <div class="owl-carousel owl-theme product_slider">
 
                         <!-- Slide 1 -->
-
                         <div class="owl-item product_slider_item">
-                            <div class="product-item">
-                                <div class="product discount">
+                            <div class="product-item men">
+                                <div class="product product_filter">
                                     <div class="product_image">
-                                        <img src="public/assets/images/product_1.png" alt="">
+                                        <img src="public/assets/images/RV13.avif" alt="">
                                     </div>
-                                    <div class="favorite favorite_left"></div>
-                                    <div
-                                        class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center">
-                                        <span>-$20</span>
-                                    </div>
-                                    <div class="product_info">
-                                        <h6 class="product_name"><a href="single.html">Fujifilm X100T 16 MP Digital
-                                                Camera (Silver)</a></h6>
-                                        <div class="product_price">$520.00<span>$590.00</span></div>
-                                    </div>
+                                    <div class="favorite"></div>
+
                                 </div>
+
                             </div>
                         </div>
 
                         <!-- Slide 2 -->
-
                         <div class="owl-item product_slider_item">
                             <div class="product-item women">
-                                <div class="product">
+                                <div class="product product_filter">
                                     <div class="product_image">
-                                        <img src="public/assets/images/product_2.png" alt="">
+                                        <img src="public/assets/images/RV15.avif" alt="">
                                     </div>
                                     <div class="favorite"></div>
-                                    <div
-                                        class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center">
-                                        <span>new</span>
-                                    </div>
-                                    <div class="product_info">
-                                        <h6 class="product_name"><a href="single.html">Samsung CF591 Series Curved
-                                                27-Inch FHD Monitor</a></h6>
-                                        <div class="product_price">$610.00</div>
-                                    </div>
+
                                 </div>
+
                             </div>
                         </div>
 
                         <!-- Slide 3 -->
-
                         <div class="owl-item product_slider_item">
                             <div class="product-item women">
-                                <div class="product">
+                                <div class="product product_filter">
                                     <div class="product_image">
-                                        <img src="public/assets/images/product_3.png" alt="">
+                                        <img src="public/assets/images/RV14.avif" alt="">
                                     </div>
                                     <div class="favorite"></div>
-                                    <div class="product_info">
-                                        <h6 class="product_name"><a href="single.html">Blue Yeti USB Microphone Blackout
-                                                Edition</a></h6>
-                                        <div class="product_price">$120.00</div>
-                                    </div>
+
                                 </div>
+
                             </div>
                         </div>
 
                         <!-- Slide 4 -->
-
                         <div class="owl-item product_slider_item">
                             <div class="product-item accessories">
-                                <div class="product">
+                                <div class="product product_filter">
                                     <div class="product_image">
-                                        <img src="public/assets/images/product_4.png" alt="">
+                                        <img src="public/assets/images/RV13.avif" alt="">
                                     </div>
                                     <div
                                         class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center">
                                         <span>sale</span>
                                     </div>
                                     <div class="favorite favorite_left"></div>
-                                    <div class="product_info">
-                                        <h6 class="product_name"><a href="single.html">DYMO LabelWriter 450 Turbo
-                                                Thermal Label Printer</a></h6>
-                                        <div class="product_price">$410.00</div>
-                                    </div>
+
                                 </div>
+
                             </div>
                         </div>
 
                         <!-- Slide 5 -->
-
                         <div class="owl-item product_slider_item">
                             <div class="product-item women men">
-                                <div class="product">
+                                <div class="product product_filter">
                                     <div class="product_image">
-                                        <img src="public/assets/images/product_5.png" alt="">
+                                        <img src="public/assets/images/RV15.avif" alt="">
                                     </div>
                                     <div class="favorite"></div>
-                                    <div class="product_info">
-                                        <h6 class="product_name"><a href="single.html">Pryma Headphones, Rose Gold &
-                                                Grey</a></h6>
-                                        <div class="product_price">$180.00</div>
-                                    </div>
+
                                 </div>
+
                             </div>
                         </div>
 
                         <!-- Slide 6 -->
-
                         <div class="owl-item product_slider_item">
                             <div class="product-item accessories">
-                                <div class="product discount">
+                                <div class="product product_filter">
                                     <div class="product_image">
-                                        <img src="public/assets/images/product_6.png" alt="">
+                                        <img src="public/assets/images/RV14.avif" alt="">
                                     </div>
                                     <div class="favorite favorite_left"></div>
                                     <div
                                         class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center">
                                         <span>-$20</span>
                                     </div>
-                                    <div class="product_info">
-                                        <h6 class="product_name"><a href="single.html">Fujifilm X100T 16 MP Digital
-                                                Camera (Silver)</a></h6>
-                                        <div class="product_price">$520.00<span>$590.00</span></div>
-                                    </div>
+
                                 </div>
+
                             </div>
                         </div>
 
                         <!-- Slide 7 -->
-
                         <div class="owl-item product_slider_item">
                             <div class="product-item women">
-                                <div class="product">
+                                <div class="product product_filter">
                                     <div class="product_image">
-                                        <img src="public/assets/images/product_7.png" alt="">
+                                        <img src="public/assets/images/RV13.avif" alt="">
                                     </div>
                                     <div class="favorite"></div>
-                                    <div class="product_info">
-                                        <h6 class="product_name"><a href="single.html">Samsung CF591 Series Curved
-                                                27-Inch FHD Monitor</a></h6>
-                                        <div class="product_price">$610.00</div>
-                                    </div>
+
                                 </div>
+
                             </div>
                         </div>
 
                         <!-- Slide 8 -->
-
                         <div class="owl-item product_slider_item">
                             <div class="product-item accessories">
-                                <div class="product">
+                                <div class="product product_filter">
                                     <div class="product_image">
-                                        <img src="public/assets/images/product_8.png" alt="">
+                                        <img src="public/assets/images/RV15.avif" alt="">
                                     </div>
                                     <div class="favorite"></div>
-                                    <div class="product_info">
-                                        <h6 class="product_name"><a href="single.html">Blue Yeti USB Microphone Blackout
-                                                Edition</a></h6>
-                                        <div class="product_price">$120.00</div>
-                                    </div>
+
                                 </div>
+
                             </div>
                         </div>
 
                         <!-- Slide 9 -->
-
                         <div class="owl-item product_slider_item">
                             <div class="product-item men">
-                                <div class="product">
+                                <div class="product product_filter">
                                     <div class="product_image">
-                                        <img src="public/assets/images/product_9.png" alt="">
+                                        <img src="public/assets/images/RV14.avif" alt="">
                                     </div>
                                     <div
                                         class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center">
                                         <span>sale</span>
                                     </div>
                                     <div class="favorite favorite_left"></div>
-                                    <div class="product_info">
-                                        <h6 class="product_name"><a href="single.html">DYMO LabelWriter 450 Turbo
-                                                Thermal Label Printer</a></h6>
-                                        <div class="product_price">$410.00</div>
-                                    </div>
+
                                 </div>
+
                             </div>
                         </div>
 
                         <!-- Slide 10 -->
-
                         <div class="owl-item product_slider_item">
                             <div class="product-item men">
-                                <div class="product">
+                                <div class="product product_filter">
                                     <div class="product_image">
-                                        <img src="public/assets/images/product_10.png" alt="">
+                                        <img src="public/assets/images/RV13.avif" alt="">
                                     </div>
                                     <div class="favorite"></div>
-                                    <div class="product_info">
-                                        <h6 class="product_name"><a href="single.html">Pryma Headphones, Rose Gold &
-                                                Grey</a></h6>
-                                        <div class="product_price">$180.00</div>
-                                    </div>
+
                                 </div>
+
                             </div>
                         </div>
+
                     </div>
 
                     <!-- Slider Navigation -->
-
                     <div
                         class="product_slider_nav_left product_slider_nav d-flex align-items-center justify-content-center flex-column">
                         <i class="fa fa-chevron-left" aria-hidden="true"></i>
@@ -603,99 +554,6 @@
         </div>
     </div>
 </div>
-
-<!-- Benefit -->
-
-<div class="benefit">
-    <div class="container">
-        <div class="row benefit_row">
-            <div class="col-lg-3 benefit_col">
-                <div class="benefit_item d-flex flex-row align-items-center">
-                    <div class="benefit_icon"><i class="fa fa-truck" aria-hidden="true"></i></div>
-                    <div class="benefit_content">
-                        <h6>free shipping</h6>
-                        <p>Suffered Alteration in Some Form</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 benefit_col">
-                <div class="benefit_item d-flex flex-row align-items-center">
-                    <div class="benefit_icon"><i class="fa fa-money" aria-hidden="true"></i></div>
-                    <div class="benefit_content">
-                        <h6>cach on delivery</h6>
-                        <p>The Internet Tend To Repeat</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 benefit_col">
-                <div class="benefit_item d-flex flex-row align-items-center">
-                    <div class="benefit_icon"><i class="fa fa-undo" aria-hidden="true"></i></div>
-                    <div class="benefit_content">
-                        <h6>45 days return</h6>
-                        <p>Making it Look Like Readable</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 benefit_col">
-                <div class="benefit_item d-flex flex-row align-items-center">
-                    <div class="benefit_icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
-                    <div class="benefit_content">
-                        <h6>opening all week</h6>
-                        <p>8AM - 09PM</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Blogs -->
-
-<div class="blogs">
-    <div class="container">
-        <div class="row">
-            <div class="col text-center">
-                <div class="section_title">
-                    <h2>Latest Blogs</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row blogs_container">
-            <div class="col-lg-4 blog_item_col">
-                <div class="blog_item">
-                    <div class="blog_background" style="background-image:url(public/assets/images/blog_1.jpg)"></div>
-                    <div class="blog_content d-flex flex-column align-items-center justify-content-center text-center">
-                        <h4 class="blog_title">Here are the trends I see coming this fall</h4>
-                        <span class="blog_meta">by admin | dec 01, 2017</span>
-                        <a class="blog_more" href="#">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 blog_item_col">
-                <div class="blog_item">
-                    <div class="blog_background" style="background-image:url(public/assets/images/blog_2.jpg)"></div>
-                    <div class="blog_content d-flex flex-column align-items-center justify-content-center text-center">
-                        <h4 class="blog_title">Here are the trends I see coming this fall</h4>
-                        <span class="blog_meta">by admin | dec 01, 2017</span>
-                        <a class="blog_more" href="#">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 blog_item_col">
-                <div class="blog_item">
-                    <div class="blog_background" style="background-image:url(public/assets/images/blog_3.jpg)"></div>
-                    <div class="blog_content d-flex flex-column align-items-center justify-content-center text-center">
-                        <h4 class="blog_title">Here are the trends I see coming this fall</h4>
-                        <span class="blog_meta">by admin | dec 01, 2017</span>
-                        <a class="blog_more" href="#">Read more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Newsletter -->
 
 <div class="newsletter">
     <div class="container">
@@ -721,5 +579,27 @@
         </div>
     </div>
 </div>
+
+<script>
+$(document).ready(function() {
+    $('.product_slider').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 4 // Display 4 items per slide for larger screens
+            }
+        }
+    });
+});
+</script>
 
 <?php include 'footer.php'; ?>
