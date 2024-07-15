@@ -97,7 +97,7 @@
             <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="layers"></i><span>Masters</span></a>
                 <ul class="dropdown-menu">
                     <li><a class="nav-link" href="widget-chart.html">User Create</a></li>
-                    <li><a class="nav-link" href="<?=base_url(); ?>menu-list">Menu</a></li>
+                    <li><a class="nav-link" href="<?=base_url(); ?>menulist">Menu</a></li>
                     <li><a class="nav-link" href="widget-data.html">Add Product</a></li>
                     <li><a class="nav-link" href="widget-data.html">Edit Product</a></li>
                 </ul>
