@@ -43,7 +43,78 @@
                 }
                 
             });
-         
+            $('#add_product').validate({
+                rules: {
+                    productname: {
+                        required: true,
+                    },
+                    brand_name: {
+                        required: true,
+                    },
+                    price: {
+                        required: true,
+                        number: true,
+                    },
+                    description: {
+                        required: true,
+                    },
+                    Ingredients: {
+                        required: true,
+                    },
+                    howtouse: {
+                        required: true,
+                    },
+                    product_image1: {
+                        required: true,
+                    },
+                    product_image2: {
+                        required: true,
+                    },
+                    product_image3: {
+                        required: true,
+                    },
+                    product_image4: {
+                        required: true,
+                    },
+                    
+                        
+                },
+                messages: {
+                    productname: {
+                        required: 'Please enter product name.',
+                    },
+                    brand_name: {
+                        required: 'Please enter brand name.',
+                    },
+                    price: {
+                        required: 'Please enter price.',
+                        number: 'Please enter a valid number.',
+                    },
+                    description: {
+                        required: 'Please enter description.',
+                    },
+                    Ingredients: {
+                        required: 'Please enter ingredients.',
+                    },
+                    howtouse: {
+                        required: 'Please enter how to use.',
+                    },
+                    product_image1: {
+                        required: 'Please enter image.',
+                    },
+                    product_image2: {
+                        required: 'Please enter image.',
+                    },
+                    product_image3: {
+                        required: 'Please enter image.',
+                    },
+                    product_image4: {
+                        required: 'Please enter image.',
+                    },
+
+                                
+                }
+            });
             // Hide flash messages after 10 seconds
             setTimeout(function() {
                 $('.flash-message').fadeOut('slow');
