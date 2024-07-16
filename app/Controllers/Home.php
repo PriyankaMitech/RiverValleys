@@ -27,5 +27,11 @@ class Home extends BaseController
         {
             return view('category');
         }
+
+
+        public function Register()
+        {
+            echo view('Register');
+        }
     
 }
