@@ -33,10 +33,7 @@ class Home extends BaseController
     {
         return view('Admin/admindashboard');
     }
-    // public function get_menu_list() 
-    // {
-    //     return view('Admin/menu_list');
-    // }
+ 
     public function get_menu_list() 
     {
         $model = new Admin_model();
@@ -107,5 +104,71 @@ class Home extends BaseController
         return redirect()->back();
 
         // Redirect or return a response as needed
+    }
+
+    public function get_user_list() 
+    {
+        $model = new Admin_model();
+
+
+        $wherecond = array('is_deleted' => 'N');
+        $data['menu_data'] = $model->getalldata('tbl_menu', $wherecond);
+
+        $uri = service('uri');
+        $user_id = $uri->getSegment(2);   // Assuming the ID is the second segment
+
+
+
+        if(!empty($user_id)){
+
+            $wherecond1 = array('is_deleted' => 'N', 'id' => $user_id);
+
+            $data['single_data'] = $model->get_single_data('tbl_user', $wherecond1);
+
+
+        }else{
+            $wherecond = array('is_deleted' => 'N');
+            $data['user_data'] = $model->getalldata('tbl_user', $wherecond);
+        }
+        return view('Admin/user_list',$data);
+
+
+    }
+
+    public function setuser()
+    {
+     $session = \CodeIgniter\Config\Services::session();
+
+     $accessLevelString = '';
+         $accessLevels = $this->request->getVar('access_level');
+        
+         if(!empty($accessLevels)){
+         $accessLevelString = implode(',', $accessLevels);
+         }
+ 
+     $data = [
+         'name' => $this->request->getPost('name'),
+         'email_id' => $this->request->getPost('email_id'),
+         'mobile_no' => $this->request->getPost('mobile_no'),
+         'role'=>'Admin',
+         'selectAllCheckbox' => $this->request->getVar('selectAllCheckbox'),
+
+         'password'=> $this->request->getPost('password'),
+         'access_level' => $accessLevelString,
+ 
+     ];
+     $db = \Config\Database::Connect();
+ 
+     if($this->request->getPost('id') == ''){
+ 
+        $update_data = $db->table('tbl_user');
+        $update_data->insert($data);
+        $session->setFlashdata('success', 'User added successfully.');  
+     } else {
+         $update_data = $db->table('tbl_user')->where('id', $this->request->getVar('id'));
+         $update_data->update($data);
+         session()->setFlashdata('success', 'User updated successfully.');
+     }
+     return redirect()->to('userlist');
     }
 }
