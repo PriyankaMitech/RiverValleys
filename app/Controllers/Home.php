@@ -192,7 +192,7 @@ class Home extends BaseController
         return view('Admin/addproduct',$data);
 
     }
-}
+
 public function setproduct()
     {
         $productname = $this->request->getVar('productname');
