@@ -20,11 +20,18 @@ $routes->get('menulist', 'Home::get_menu_list');
 $routes->get('editmenu/(:any)', 'Home::get_menu_list/$1');
 $routes->post('setmenu', 'Home::setmenu');
 
+
 // Add user, set user and Get user List 
 $routes->get('userlist', 'Home::get_user_list');
 $routes->get('edituser/(:any)', 'Home::get_user_list/$1');
 $routes->post('setuser', 'Home::setuser');
 
 
+// Add product, product  and product List 
+
+$routes->get('addproduct', 'Home::addproduct');
+
+$routes->post('setproduct', 'Home::setproduct');
+$routes->get('editproduct/(:any)', 'Home::addproduct/$1');
 
 

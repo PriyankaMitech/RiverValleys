@@ -98,7 +98,7 @@
                 <ul class="dropdown-menu">
                     <li><a class="nav-link" href="<?=base_url(); ?>userlist">User List</a></li>
                     <li><a class="nav-link" href="<?=base_url(); ?>menulist">Menu List</a></li>
-                    <li><a class="nav-link" href="widget-data.html">Product List</a></li>
+                    <li><a class="nav-link" href="<?=base_url(); ?>addproduct">Product List</a></li>
                 </ul>
             </li>
             <li class="dropdown">

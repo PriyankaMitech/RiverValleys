@@ -171,4 +171,97 @@ class Home extends BaseController
      }
      return redirect()->to('userlist');
     }
+  public function addproduct()
+    {
+        $model = new Admin_model();
+
+        $uri = service('uri');
+        $menu_id = $uri->getSegment(2);   // Assuming the ID is the second segment
+
+        if(!empty($menu_id)){
+
+            $wherecond1 = array('is_deleted' => 'N', 'id' => $menu_id);
+
+            $data['single_data'] = $model->get_single_data('tbl_product', $wherecond1);
+
+
+        }else{
+            $wherecond = array('is_deleted' => 'N');
+            $data['menu_data'] = $model->getalldata('tbl_product', $wherecond);
+        }
+        return view('Admin/addproduct',$data);
+
+    }
+}
+public function setproduct()
+    {
+        $productname = $this->request->getVar('productname');
+        $brand_name = $this->request->getVar('brand_name');
+        $price = $this->request->getVar('price');
+        $description = $this->request->getVar('description');
+        $ingredients = $this->request->getVar('Ingredients');
+        $howtouse = $this->request->getVar('howtouse');
+        
+        $data = [
+            'productname' => $productname,
+            'brand_name' => $brand_name,
+            'price' => $price,
+            'description' => $description,
+            'ingredients' => $ingredients,
+            'howtouse' => $howtouse,
+            // 'created_on' => date('Y:m:d H:i:s'),
+        ];
+    
+        $db = \Config\Database::connect();
+        $productTable = $db->table('tbl_product');
+    
+        if ($this->request->getFile('product_image1')->isValid()) {
+            $image1 = $this->request->getFile('product_image1');
+            $image1Name = $image1->getRandomName();
+            $image1->move(ROOTPATH . 'public/localbrand/images', $image1Name);
+            $data['product_image1'] = $image1Name;
+        }
+        
+        if ($this->request->getFile('product_image2')->isValid()) {
+            $image2 = $this->request->getFile('product_image2');
+            $image2Name = $image2->getRandomName();
+            $image2->move(ROOTPATH . 'public/localbrand/images', $image2Name);
+            $data['product_image2'] = $image2Name;
+        }
+    
+        if ($this->request->getFile('product_image3')->isValid()) {
+            $image3 = $this->request->getFile('product_image3');
+            $image3Name = $image3->getRandomName();
+            $image3->move(ROOTPATH . 'public/localbrand/images', $image3Name);
+            $data['product_image3'] = $image3Name;
+        }
+    
+        if ($this->request->getFile('product_image4')->isValid()) {
+            $image4 = $this->request->getFile('product_image4');
+            $image4Name = $image4->getRandomName();
+            $image4->move(ROOTPATH . 'public/localbrand/images', $image4Name);
+            $data['product_image4'] = $image4Name;
+        }
+    
+        $existingProduct = $productTable
+            ->where('productname', $productname)
+            ->where('brand_name', $brand_name)
+            ->get()
+            ->getFirstRow();
+        
+        if ($existingProduct && ($this->request->getVar('id') == "" || $existingProduct->id != $this->request->getVar('id'))) {
+            session()->setFlashdata('error', 'Product name and brand combination already exists.');
+            return redirect()->to('productlist'); 
+        }
+    
+        if ($this->request->getVar('id') == "") {
+            $productTable->insert($data);
+            session()->setFlashdata('success', 'Product added successfully.');
+        } else {
+            $productTable->where('id', $this->request->getVar('id'))->update($data);
+            session()->setFlashdata('success', 'Product updated successfully.');
+        }
+    
+        return redirect()->to('addproduct');
+    }
 }
