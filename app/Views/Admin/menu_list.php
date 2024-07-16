@@ -69,7 +69,7 @@ if (strpos($current_url, 'editmenu') !== false) {
                             <div class="row card-body">
                                 <input type="hidden" name="id" class="form-control" id="id" value="<?php if(!empty($single_data)){ echo $single_data->id;} ?>">
                                 <div class="col-lg-12 col-md-12 col-12 form-group">
-                                    <label for="menu_name">Enter Menu Name</label>
+                                    <label for="menu_name">Menu Name</label>
                                     <input type="text" name="menu_name" class="form-control" id="menu_name" placeholder="Enter menu name" value="<?php if(!empty($single_data)){ echo $single_data->menu_name; } ?>">
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-12 form-group">
