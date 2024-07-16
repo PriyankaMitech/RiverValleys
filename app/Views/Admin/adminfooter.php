@@ -23,6 +23,33 @@
 
   <script>
         $(document).ready(function() {
+
+            setTimeout(function() {
+                $('.flash-message').fadeOut('slow');
+            }, 5000); // 10000 milliseconds = 10 seconds
+      
+            
+            $.validator.addMethod("validEmail", function(value, element) {
+                return this.optional(element) || /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(value);
+            }, "Please enter a valid email address.");
+
+            $.validator.addMethod("validMobileNumber", function(value, element) {
+                return this.optional(element) || /^\d{10}$/i.test(value);
+            }, "Please enter a valid 10-digit mobile number.");
+
+            $.validator.addMethod('lettersOnly', function(value, element) {
+                return /^[a-zA-Z\s]*$/.test(value);
+            }, 'Please enter letters only');
+
+            $.validator.addMethod('customPassword', function(value, element) {
+                    // Password must contain at least one uppercase letter, one lowercase letter, one number, and one symbol. It should be at least 8 characters long.
+                    return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[a-zA-Z\d!@#$%^&*]{8,}$/.test(value);
+                },
+                'Password must contain at least one uppercase letter, one lowercase letter, one number, and one symbol (!@#$%^&*) and be at least 8 characters long'
+            );
+
+         
+
             $('#add_menu_form ').validate({
                 rules: {
                     menu_name: {
@@ -116,11 +143,63 @@
                 }
             });
             // Hide flash messages after 10 seconds
-            setTimeout(function() {
-                $('.flash-message').fadeOut('slow');
-            }, 5000); // 10000 milliseconds = 10 seconds
-      
+           
         });
+
+
+    // Initialize form validation
+        $('#user_form').validate({
+            rules: {
+                name: {
+                    required: true,
+                    lettersOnly: true
+                },
+                email_id: {
+                    required: true,
+                    validEmail: true
+                },
+                mobile_no: {
+                    required: true,
+                    validMobileNumber: true
+                },
+              
+                password: {
+                    required: true,
+                    customPassword: true
+                },
+                cpassword: {
+                    required: true,
+                    equalTo: '#password'
+                },
+               
+            },
+            messages: {
+                name: {
+                    required: 'Please enter name.',
+                    lettersOnly: 'Please enter letters only'
+                },
+                email_id: {
+                    required: 'Please enter email address',
+                    validEmail: 'Please enter a valid email address'
+                },
+                mobile_no: {
+                    required: 'Please enter Mobile number.'
+                },
+             
+                password: {
+                    required: "Password is required.",
+                    customPassword: "Password must contain at least one uppercase letter, one lowercase letter, one number, one symbol, and be at least 8 characters long"
+                },
+                cpassword: {
+                    required: 'Please confirm your password.',
+                    equalTo: 'Passwords do not match.'
+                },
+               
+            },
+            // Error placement function to customize error display for radio buttons
+         
+        });
+
   </script>
 
 

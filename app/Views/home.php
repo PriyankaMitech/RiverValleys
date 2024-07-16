@@ -123,6 +123,47 @@
             alt="Center Image 23">
     </div>
 </div>
+
+<div class="main_slider4">
+        <div class="container fill_height">
+            <div class="row align-items-center fill_height">
+                <div class="col">
+                    <div class="main_slider_content2">
+                        <img src="http://localhost/RiverValleys/public/assets/images/RV11.png" class="heading_center_image4" alt="New Image">
+                        <h1 class="centered_text4">Offer Section</h1>
+                    </div>
+                </div>
+                <div class="container_offer">
+                    <div class="image_wrapper">
+                        <img class="image_ofeer" src="public/assets/images/RV33.avif" />
+                        <img class="image_ofeer" src="public/assets/images/RV34.avif" />
+                    </div>
+                    <div class="image_wrapper">
+                        <img class="image_ofeer" src="public/assets/images/RV35.avif" />
+                        <img class="image_ofeer" src="public/assets/images/RV36.avif" />
+                    </div>
+                    <div class="image_wrapper">
+                        <img class="image_ofeer" src="public/assets/images/RV37.avif" />
+                        <img class="image_ofeer" src="public/assets/images/RV33.avif" />
+                    </div>
+                    <div class="image_wrapper">
+                        <img class="image_ofeer" src="public/assets/images/RV34.avif" />
+                        <img class="image_ofeer" src="public/assets/images/RV35.avif" />
+                    </div>
+                    <div class="image_wrapper">
+                        <img class="image_ofeer" src="public/assets/images/RV36.avif" />
+                        <img class="image_ofeer" src="public/assets/images/RV37.avif" />
+                    </div>
+                    <div class="image_wrapper">
+                        <img class="image_ofeer" src="public/assets/images/RV33.avif" />
+                        <img class="image_ofeer" src="public/assets/images/RV34.avif" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 <div class="new_arrivals">
     <div class="container">
         <div class="row">

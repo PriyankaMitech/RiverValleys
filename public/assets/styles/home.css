@@ -295,3 +295,126 @@
     width: 100%; /* Ensure images take full width of their container */
     margin-bottom: 20px; /* Example margin to create space below each image */
 }
+
+
+
+
+.main_slider4 {
+    width: 100%;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #F4F4F4;
+}
+
+.container {
+    height: 100%;
+}
+
+.fill_height {
+    height: 100%;
+}
+
+.main_slider_content2 {
+    text-align: center;
+    position: relative;
+}
+
+.heading_center_image4 {
+    position: absolute;
+    top: 0px;
+    left: 33%;
+    transform: translateX(143%);
+    width: 100px;
+    height: auto;
+    z-index: 10;
+}
+
+.centered_text4 {
+    position: absolute;
+    top: 50px;
+    left: 34%;
+    transform: translateX(20%);
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 11;
+}
+
+.container_offer {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.image_wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    animation: change-img-anim 30s infinite;
+}
+
+.image_wrapper:nth-of-type(1) {
+    animation-delay: 0s;
+}
+
+.image_wrapper:nth-of-type(2) {
+    animation-delay: 5s;
+}
+
+.image_wrapper:nth-of-type(3) {
+    animation-delay: 10s;
+}
+
+.image_wrapper:nth-of-type(4) {
+    animation-delay: 15s;
+}
+
+.image_wrapper:nth-of-type(5) {
+    animation-delay: 20s;
+}
+
+.image_wrapper:nth-of-type(6) {
+    animation-delay: 25s;
+}
+
+.image_ofeer {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.image_ofeer:first-child {
+    border-top-left-radius:10%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 0;
+}
+
+.image_ofeer:last-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 10%;
+}
+
+@keyframes change-img-anim {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    50% { opacity: 1; }
+    60% { opacity: 0; }
+    100% { opacity: 0; }
+}
