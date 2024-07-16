@@ -51,7 +51,7 @@ if (strpos($current_url, 'editproduct') !== false) {
                                         <td><?= $data->price; ?></td>
                                         <td>
                                             <a href="editproduct/<?= $data->id; ?>"><i class="far fa-edit me-2"></i></a>
-                                            <a href="<?= base_url(); ?>delete/<?= $data->id; ?>/tbl_menu"
+                                            <a href="<?= base_url(); ?>delete/<?= $data->id; ?>/tbl_product"
                                                 onclick="return confirm('Are You Sure You Want To Delete This Record?')"><i
                                                     class="far fa-trash-alt me-2"></i></a>
                                         </td>
