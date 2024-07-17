@@ -1,0 +1,462 @@
+.banner {
+    background-size: cover;
+    background-position: center;
+    height: 170px;
+    /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.banner_item.single-background {
+    width: 100%;
+}
+
+.banner_categories {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.banner_category a {
+
+    font-size: 20px;
+    /* Adjust font size as needed */
+    text-decoration: none;
+
+    border-radius: 5px;
+    /* Optional: add border radius */
+}
+
+.top_right_image {
+    position: absolute;
+    top: -12px;
+    right: -13px;
+    width: 283px;
+    height: 281px;
+}
+
+.top_left_image {
+    position: absolute;
+    top: 253px;
+    left: -7px;
+    width: 246px;
+    height: 246px;
+}
+
+.center_image {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    width: 345px;
+    height: 175px;
+}
+
+.center_image2 {
+    position: absolute;
+    top: 50%;
+    left: calc(57% + 110px);
+    transform: translate(-50%, -50%);
+    width: 345px;
+    height: 175px;
+}
+
+.heading_center_image {
+    position: absolute;
+    top: -160px;
+    left: 55%;
+    transform: translateX(143%);
+    width: 100px;
+    height: auto;
+    z-index: 10;
+}
+.heading_center_image2 {
+    position: absolute;
+    top: -240px;
+    left: 33%;
+    transform: translateX(143%);
+    width: 100px;
+    height: auto;
+    z-index: 10;
+}
+
+.centered_text {
+    position: absolute;
+    top: -115px;
+    left: 55%;
+    transform: translateX(20%);
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 11;
+}
+.centered_text2 {
+    position: absolute;
+    top: -190px;
+    left: 33%;
+    transform: translateX(20%);
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 11;
+}
+
+
+.center_images_container {
+    position: absolute;
+    top: 84%; 
+    left: 49%; 
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 80%;
+}
+.center_images_container22 {
+    position: absolute;
+    top: 61%; 
+    left: 40%; 
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 80%;
+}
+.center_images_container2 {
+    position: absolute;
+    top: 78%; 
+    left: 80%; 
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 80%;
+}
+.center_images_container4 {
+    position: absolute;
+    top: 44%; 
+    left: 100%; 
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 80%;
+}
+
+.center_images {
+    width: 170px;
+    height: auto; 
+    border: 3px solid #ffffff; 
+    border-radius: 10px; 
+}
+.center_image22 {
+    width: 500px;
+    height: auto; 
+    border: 3px solid #ffffff; 
+    border-radius: 10px; 
+}
+.center_image21 {
+    width: 250px;
+    height: auto; 
+    border: 3px solid #ffffff; 
+    border-radius: 10px; 
+}
+.center_image23 {
+    width: 250px;
+    height: auto; 
+    border: 3px solid #ffffff; 
+    border-radius: 10px; 
+}
+
+
+.image1 {
+    position: absolute;
+    left: 25%; 
+}
+
+.image2 {
+    position: absolute;
+    left: 45%; 
+   
+}
+
+.image3 {
+    position: absolute;
+    left: 65%; 
+}
+.image22 {
+    position: absolute;
+    left: 25%; 
+}
+.image20 {
+    position: absolute;
+    left: 25%; 
+}
+.image21 {
+    position: absolute;
+    left: 25%; 
+}
+
+.main_slider3
+{
+	width: 100%;
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+    background-color: antiquewhite;
+	padding-top: 25px;
+}
+
+.top_left_image31 {
+    position: absolute;
+    top: 839px;
+    left: -109px;
+    width: 246px;
+    height: 246px;
+}
+.top_right_image30 {
+    position: absolute;
+    top: -0px;
+    right: -113px;
+    width: 283px;
+    height: 281px;
+}
+.heading_center_image3 {
+    /* position: absolute; */
+    top: -0px;
+    left: 33%;
+    transform: translateX(437%);
+    width: 100px;
+    height: auto;
+    z-index: 10;
+    padding-top: 20px;
+}
+.centered_text3 {
+    /* position: absolute; */
+    top: 0px;
+    left: 33%;
+    transform: translateX(165%);
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 11;
+}
+
+
+.brand_section {
+    margin-top: 50px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: #f1e2cb;
+  
+}
+
+
+.brand_slider {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    animation: slide 15s linear infinite;
+}
+
+.brand_item {
+    flex: 0 0 auto;
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    margin: 0 20px; /* Adjust the margin as needed */
+}
+
+.brand_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.product_image img {
+    display: block; /* Ensure images behave as block elements */
+    width: 100%; /* Ensure images take full width of their container */
+    margin-bottom: 20px; /* Example margin to create space below each image */
+}
+
+
+
+
+.main_slider4 {
+    width: 100%;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #F4F4F4;
+}
+
+.container {
+    height: 100%;
+}
+
+.fill_height {
+    height: 100%;
+}
+
+.main_slider_content2 {
+    text-align: center;
+    position: relative;
+}
+
+.heading_center_image4 {
+    position: absolute;
+    top: 0px;
+    left: 33%;
+    transform: translateX(143%);
+    width: 100px;
+    height: auto;
+    z-index: 10;
+}
+
+.centered_text4 {
+    position: absolute;
+    top: 50px;
+    left: 34%;
+    transform: translateX(20%);
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 11;
+}
+
+.container_offer {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.image_wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    animation: change-img-anim 30s infinite;
+}
+
+.image_wrapper:nth-of-type(1) {
+    animation-delay: 0s;
+}
+
+.image_wrapper:nth-of-type(2) {
+    animation-delay: 5s;
+}
+
+.image_wrapper:nth-of-type(3) {
+    animation-delay: 10s;
+}
+
+.image_wrapper:nth-of-type(4) {
+    animation-delay: 15s;
+}
+
+.image_wrapper:nth-of-type(5) {
+    animation-delay: 20s;
+}
+
+.image_wrapper:nth-of-type(6) {
+    animation-delay: 25s;
+}
+
+.image_ofeer {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.image_ofeer:first-child {
+    border-top-left-radius:10%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 0;
+}
+
+.image_ofeer:last-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 10%;
+}
+
+@keyframes change-img-anim {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    50% { opacity: 1; }
+    60% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+
+.center_images_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center_images {
+    margin: 10px; 
+    transition: border-color 0.3s ease; 
+}
+
+.center_images:hover {
+    border: 2px solid #73ff00; 
+}
+
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Adjust height as needed */
+    position: relative;
+}
+
+.image {
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    margin: 0 10px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+}
+
+.flipped {
+    transform: rotateY(180deg);
+}
+
+
+
+
