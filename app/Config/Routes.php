@@ -10,6 +10,10 @@ $routes->get('header', 'Home::Header');
 $routes->get('footer', 'Home::Footer');
 $routes->get('addtocart', 'Home::AddCart');
 $routes->get('category', 'Home::Category');
+
+
+$routes->post('register', 'RegistrationController::register');
+
 $routes->get('raiseaticket', 'Home::raiseaticket');
 
 $routes->get('admindashboard', 'Home::admindashboard');
@@ -39,5 +43,6 @@ $routes->get('editproduct/(:any)', 'Home::addproduct/$1');
 $routes->get('localbrandlist', 'Home::get_localbrand_list');
 $routes->get('editlocalbrand/(:any)', 'Home::get_localbrand_list/$1');
 $routes->post('setlocalbrand', 'Home::setlocalbrand');
+
 
 

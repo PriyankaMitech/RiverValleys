@@ -232,6 +232,12 @@ class Home extends BaseController
             $image2->move(ROOTPATH . 'public/localbrand/images', $image2Name);
             $data['product_image2'] = $image2Name;
         }
+
+
+        public function Register()
+        {
+            echo view('Register');
+        }
     
         if ($this->request->getFile('product_image3')->isValid()) {
             $image3 = $this->request->getFile('product_image3');
