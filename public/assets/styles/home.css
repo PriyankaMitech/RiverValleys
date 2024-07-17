@@ -231,7 +231,7 @@
     /* position: absolute; */
     top: -0px;
     left: 33%;
-    transform: translateX(522%);
+    transform: translateX(437%);
     width: 100px;
     height: auto;
     z-index: 10;
@@ -418,3 +418,45 @@
     60% { opacity: 0; }
     100% { opacity: 0; }
 }
+
+
+.center_images_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center_images {
+    margin: 10px; 
+    transition: border-color 0.3s ease; 
+}
+
+.center_images:hover {
+    border: 2px solid #73ff00; 
+}
+
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Adjust height as needed */
+    position: relative;
+}
+
+.image {
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    margin: 0 10px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+}
+
+.flipped {
+    transform: rotateY(180deg);
+}
+
+
+
+

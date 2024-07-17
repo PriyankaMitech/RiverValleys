@@ -68,7 +68,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="footer_nav_container">
-                        <div class="cr">©2024 All Rights Reserverd. Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://www.marketingintelligence.tech/">Mi Tech</a></div>
+                        <div class="cr">©2024 All Rights Reserverd. Designed Developed by <a href="https://www.marketingintelligence.tech/">Mi Tech</a></div>
                     </div>
                 </div>
             </div>
