@@ -621,26 +621,5 @@
     </div>
 </div>
 
-<script>
-$(document).ready(function() {
-    $('.product_slider').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        dots: false,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 4 // Display 4 items per slide for larger screens
-            }
-        }
-    });
-});
-</script>
 
 <?php include 'footer.php'; ?>

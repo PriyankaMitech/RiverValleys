@@ -7,28 +7,32 @@ use App\Models\Admin_model;
 class Home extends BaseController
 {
     public function index(): string
-        {
-            return view('home');
-        }
+    {
+        return view('home');
+    }
 
     public function Header()
-        {
-            return view('header');
-        }
+    {
+        return view('header');
+    }
 
     public function Footer()
-        {
-            return view('footer');
-        }
+    {
+        return view('footer');
+    }
     
     public function AddCart()
-        {
-            return view('addtocart');
-        }
-        public function Category()
-        {
-            return view('category');
-        }
+    {
+        return view('addtocart');
+    }
+    public function Category()
+    {
+        return view('category');
+    }
+    public function support()
+    {
+        return view('support');
+    }
     public function admindashboard() 
     {
         return view('Admin/admindashboard');
@@ -193,7 +197,7 @@ class Home extends BaseController
 
     }
 
-public function setproduct()
+    public function setproduct()
     {
         $productname = $this->request->getVar('productname');
         $brand_name = $this->request->getVar('brand_name');
@@ -263,5 +267,56 @@ public function setproduct()
         }
     
         return redirect()->to('addproduct');
+    }
+
+    public function get_localbrand_list() 
+    {
+        $model = new Admin_model();
+
+        $uri = service('uri');
+        $localbrand_id = $uri->getSegment(2);   // Assuming the ID is the second segment
+
+        if(!empty($localbrand_id)){
+
+            $wherecond1 = array('is_deleted' => 'N', 'id' => $localbrand_id);
+
+            $data['single_data'] = $model->get_single_data('tbl_localbrand', $wherecond1);
+
+
+        }else{
+            $wherecond = array('is_deleted' => 'N');
+            $data['localbrand_data'] = $model->getalldata('tbl_localbrand', $wherecond);
+        }
+        return view('Admin/localbrand_list',$data);
+
+
+    }
+    public function setlocalbrand()
+    {
+        $localbrand_name = $this->request->getVar('localbrand_name');
+        $data = [
+            'localbrand_name' => $localbrand_name,
+            'created_on' => date('Y:m:d H:i:s'),
+        ];
+        $db = \Config\Database::connect();
+        $localbrandTable = $db->table('tbl_localbrand');
+        $existinglocalbrand = $localbrandTable
+            ->where('localbrand_name', $localbrand_name)
+            ->get()
+            ->getFirstRow();
+        if ($existinglocalbrand && ($this->request->getVar('id') == "" || $existinglocalbrand->id != $this->request->getVar('id'))) {
+            session()->setFlashdata('error', 'localbrand name already exists.');
+            return redirect()->to('localbrandlist'); 
+        }
+
+        if ($this->request->getVar('id') == "") {
+            $localbrandTable->insert($data);
+            session()->setFlashdata('success', 'localbrand added successfully.');
+        } else {
+            $localbrandTable->where('id', $this->request->getVar('id'))->update($data);
+            session()->setFlashdata('success', 'localbrand updated successfully.');
+        }
+
+        return redirect()->to('localbrandlist');
     }
 }
