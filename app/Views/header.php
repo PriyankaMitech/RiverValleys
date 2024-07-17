@@ -38,12 +38,12 @@
             transform: translate(0, 0);
         }
         .modal-content {
-            background-color: #fefefe;
+            background-color: transparent;
             margin-left: -30rem;
             padding: 20px;
-            border: 1px solid #888;
+            border: none;
             width: 150%;
-            border-radius: 1.3rem;
+            border-radius: 50%;
             animation: modalFadeIn 0.5s ease-in-out;
            
         }
@@ -197,7 +197,7 @@
         }
 
         form h2 {
-        font-size: 1.9rem;
+        font-size: 27px;
         font-weight: 400;
         text-align: center;
         color: #fff;
@@ -205,7 +205,7 @@
         }
 
         form h2:hover {
-            color: #49d3d8;
+            color: #116633;
             transform: scale(1.1);
         }
 
@@ -226,7 +226,25 @@
     .offset-xl-1 {
         margin-left: 1.333333%;
     }
-    
+    .rounded {
+        border-radius: 16.50rem !important;
+    }
+        .ribbon-container {
+            position: relative;
+            text-align: center;
+            margin-bottom: 0rem;
+            background: none;
+        }
+
+        .ribbon {
+            width: 188px;
+            height: auto;
+            background: transparent;
+            margin-left: 16rem !important;
+            margin-top: -17rem;
+            margin-bottom: -10rem;
+        }
+        
     </style>
 </head>
 
@@ -413,31 +431,37 @@
                 </div>
             </section> -->
 
+             <!-- Ribbon and Circle Image -->
+            <div class="ribbon-strip">
+                <img src="public/images/rope2.png" alt="Ribbon" class="ribbon">
+            </div>
+
             <section class="vh-100 gradient-custom">
-                <div class="container py-5" style="background: linear-gradient(to right, #040505, #266b49, #0de05e, #266b49, #040505); border-radius: 10%">
+                <div class="container py-5" style="background: linear-gradient(to right, #040505, #266b49, #88e0d6, #b9e5e0); border-radius: 50%">
                     <div class="row d-flex align-items-center justify-content-center h-100">
                     <div class="col-md-8 col-lg-7 col-xl-6">
                         <img src="public/images/bc-13.jpeg" class="img-fluid rounded" alt="Registration Image">
                     </div>
                         <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
-                            <form id="registrationForm">
-                                <h2 class="text-center">Login / Registration</h2>
-                                
-                                <!-- Mobile Number input -->
-                                <div class="form-outline mb-4">
-                                    <input type="tel" id="mobileNumber" placeholder="Enter Mobile Number" class="form-control form-control-lg" required />
-                                    <div class="invalid-feedback" id="mobileNumberError">
-                                        Please enter a valid mobile number.
-                                    </div>
-                                </div>
+                        <form id="registrationForm" action="<?= base_url('register') ?>" method="post">
+                            <h2 class="text-center">Login / Registration</h2>
 
-                                <!-- OTP input -->
-                                <div class="form-OTP mb-4 d-flex align-items-center">
-                                    <input type="number" id="form1Example23" placeholder="Enter OTP" class="form-control form-control-lg mr-2" required />
-                                    <button id="submitotp" class="btn btn-primary btn-lg shadow-sm px-4 rounded-pill">Submit</button>
+                            <div class="form-outline mb-4">
+                                <input type="tel" id="mobileNumber" name="mobile_no" placeholder="Enter Mobile Number" class="form-control form-control-lg" required />
+                                <div class="invalid-feedback" id="mobileNumberError">
+                                    Please enter a valid mobile number.
                                 </div>
+                            </div>
 
-                            </form>
+                            <div class="form-OTP mb-4 d-flex align-items-center">
+                                <input type="number" id="form1Example23" name="Login_otp" placeholder="Enter OTP" class="form-control form-control-lg mr-2" required />
+                                <button id="submitotp" class="btn btn-primary btn-lg shadow-sm px-4 rounded-pill">Submit</button>
+                            </div>
+
+                            <?php if(isset($validation)): ?>
+                                <div class="alert alert-danger"><?= $validation->listErrors() ?></div>
+                            <?php endif; ?>
+                        </form>
                         </div>
                     </div>
                 </div>
@@ -483,17 +507,11 @@
         utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
     });
 
-    form.addEventListener("submit", function(event) {
-        const isValid = iti.isValidNumber();
-        if (!isValid) {
-            input.classList.add("is-invalid");
-            errorMsg.style.display = 'block';
-            event.preventDefault();
-        } else {
-            input.classList.remove("is-invalid");
-            errorMsg.style.display = 'none';
-        }
-    });
+    document.addEventListener("DOMContentLoaded", function() {
+    const errorMsg = document.getElementById("errorMsg");
+    errorMsg.style.display = 'none';
+});
+
 
     input.addEventListener('input', function() {
         const isNumeric = /^\d+$/;

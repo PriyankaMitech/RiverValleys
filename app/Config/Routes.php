@@ -11,4 +11,4 @@ $routes->get('footer', 'Home::Footer');
 $routes->get('addtocart', 'Home::AddCart');
 $routes->get('category', 'Home::Category');
 
-$routes->get('Register', 'Home::Register');
+$routes->post('register', 'RegistrationController::register');
