@@ -24,6 +24,8 @@
   <script>
         $(document).ready(function() {
 
+            // Hide flash messages after 10 seconds
+
             setTimeout(function() {
                 $('.flash-message').fadeOut('slow');
             }, 5000); // 10000 milliseconds = 10 seconds
@@ -68,8 +70,24 @@
                         required: 'Please enter URL location.',
                     },
                 }
+            });
+
+            $('#add_localbrand_form ').validate({
+                rules: {
+                    localbrand_name: {
+                        required: true,
+                    },
+                  
+                },
+                messages: {
+                    localbrand_name: {
+                        required: 'Please enter local brand name.',
+                    },
+                   
+                }
                 
             });
+           
             $('#add_product').validate({
                 rules: {
                     productname: {
@@ -142,7 +160,6 @@
                                 
                 }
             });
-            // Hide flash messages after 10 seconds
            
         });
 

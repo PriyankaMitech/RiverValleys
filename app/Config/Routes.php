@@ -10,6 +10,8 @@ $routes->get('header', 'Home::Header');
 $routes->get('footer', 'Home::Footer');
 $routes->get('addtocart', 'Home::AddCart');
 $routes->get('category', 'Home::Category');
+$routes->get('support', 'Home::support');
+
 $routes->get('admindashboard', 'Home::admindashboard');
 
 $routes->post('delete/(:any)/(:any)', 'Home::delete/$1/$1');
@@ -28,10 +30,14 @@ $routes->post('setuser', 'Home::setuser');
 
 
 // Add product, product  and product List 
-
 $routes->get('addproduct', 'Home::addproduct');
-
 $routes->post('setproduct', 'Home::setproduct');
 $routes->get('editproduct/(:any)', 'Home::addproduct/$1');
+
+
+// Add Local Brand, set Local Brand and Get Local Brand List 
+$routes->get('localbrandlist', 'Home::get_localbrand_list');
+$routes->get('editlocalbrand/(:any)', 'Home::get_localbrand_list/$1');
+$routes->post('setlocalbrand', 'Home::setlocalbrand');
 
 
