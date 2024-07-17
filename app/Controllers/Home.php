@@ -29,9 +29,9 @@ class Home extends BaseController
     {
         return view('category');
     }
-    public function support()
+    public function raiseaticket()
     {
-        return view('support');
+        return view('raiseaticket');
     }
     public function admindashboard() 
     {

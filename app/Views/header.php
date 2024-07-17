@@ -14,15 +14,17 @@ $page = $uri->getSegment(count($pages));
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Colo Shop Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/styles/header.css">
+
     <?php if ($page == 'RiverValleys') { ?>
 
-    <link rel="stylesheet" type="text/css" href="public/assets/styles/bootstrap4/bootstrap.min.css">
-    <link href="public/assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="public/assets/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="public/assets/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-    <link rel="stylesheet" type="text/css" href="public/assets/plugins/OwlCarousel2-2.2.1/animate.css">
-    <link rel="stylesheet" type="text/css" href="public/assets/styles/main_styles.css">
-    <link rel="stylesheet" type="text/css" href="public/assets/styles/responsive.css">
+    <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/styles/bootstrap4/bootstrap.min.css">
+    <link href="<?=base_url(); ?>public/assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/plugins/OwlCarousel2-2.2.1/animate.css">
+    <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/styles/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/styles/responsive.css">
     <style>
     /* Modal styles */
     .modal {
@@ -65,16 +67,18 @@ $page = $uri->getSegment(count($pages));
 
  
     </style>
-    <?php }else if ($page == 'support') { ?>
-        <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
-        <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-        <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-        <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
-        <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
-        <link rel="stylesheet" type="text/css" href="plugins/jquery-ui-1.12.1.custom/jquery-ui.css">
-        <link rel="stylesheet" type="text/css" href="styles/contact_styles.css">
-        <link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+    <?php }else if ($page == 'raiseaticket') { ?>
+        <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/styles/bootstrap4/bootstrap.min.css">
+        <link href="<?=base_url(); ?>public/assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+        <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+        <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/plugins/OwlCarousel2-2.2.1/animate.css">
+        <link rel="stylesheet" href="<?=base_url(); ?>public/assets/plugins/themify-icons/themify-icons.css">
+        <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/plugins/jquery-ui-1.12.1.custom/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/styles/contact_styles.css">
+        <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/styles/contact_responsive.css">
+        <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/styles/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/styles/responsive.css">
         <?php } ?>
 </head>
 

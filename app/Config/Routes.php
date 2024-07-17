@@ -10,7 +10,7 @@ $routes->get('header', 'Home::Header');
 $routes->get('footer', 'Home::Footer');
 $routes->get('addtocart', 'Home::AddCart');
 $routes->get('category', 'Home::Category');
-$routes->get('support', 'Home::support');
+$routes->get('raiseaticket', 'Home::raiseaticket');
 
 $routes->get('admindashboard', 'Home::admindashboard');
 
