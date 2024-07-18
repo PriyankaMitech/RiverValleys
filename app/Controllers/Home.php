@@ -232,13 +232,9 @@ class Home extends BaseController
             $image2->move(ROOTPATH . 'public/localbrand/images', $image2Name);
             $data['product_image2'] = $image2Name;
         }
-
-
-        public function Register()
-        {
-            echo view('Register');
-        }
     
+
+      
         if ($this->request->getFile('product_image3')->isValid()) {
             $image3 = $this->request->getFile('product_image3');
             $image3Name = $image3->getRandomName();
@@ -274,6 +270,11 @@ class Home extends BaseController
     
         return redirect()->to('addproduct');
     }
+    public function Register()
+    {
+        echo view('Register');
+    }
+
 
     public function get_localbrand_list() 
     {
