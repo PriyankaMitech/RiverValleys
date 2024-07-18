@@ -80,7 +80,7 @@
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="public/assets/styles/bootstrap4/popper.js"></script>
     <script src="<?=base_url(); ?>public/assets/styles/bootstrap4/bootstrap.min.js"></script>
     <script src="<?=base_url(); ?>public/assets/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
     <script src="<?=base_url(); ?>public/assets/plugins/easing/easing.js"></script>
@@ -113,10 +113,13 @@
         });
         </script>
     <?php }else if ($page == 'raiseaticket') { ?>
-        <script src="<?=base_url(); ?>public/assets/styles/bootstrap4/popper.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
         <script src="<?=base_url(); ?>public/assets/plugins/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
         <script src="<?=base_url(); ?>public/assets/js/contact_custom.js"></script>
+    <?php }else if($page == 'category'){ ?>
+        <script src="public/assets/plugins/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+        <script src="public/assets/plugins/parallax-js-master/parallax.min.js"></script>
+        <script src="public/assets/js/categories_custom.js"></script>
     <?php } ?>
 
 

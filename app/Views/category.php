@@ -1,9 +1,6 @@
 <?php include 'header.php'; ?>
-<link rel="stylesheet" type="text/css" href="public/assets/plugins/jquery-ui-1.12.1.custom/jquery-ui.css">
-<link rel="stylesheet" type="text/css" href="public/assets/styles/categories_styles.css">
-<link rel="stylesheet" type="text/css" href="public/assets/styles/categories_responsive.css">
 
-<div class="fs_menu_overlay"></div>
+
 
 <!-- Hamburger Menu -->
 
@@ -324,10 +321,4 @@
 </div>
 
 <?php include 'footer.php'; ?>
-<script src="public/assets/js/jquery-3.2.1.min.js"></script>
-<script src="public/assets/styles/bootstrap4/popper.js"></script>
-<script src="public/assets/styles/bootstrap4/bootstrap.min.js"></script>
-<script src="public/assets/plugins/Isotope/isotope.pkgd.min.js"></script>
-<script src="public/assets/plugins/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
-<script src="public/assets/plugins/parallax-js-master/parallax.min.js"></script>
-<script src="public/assets/js/categories_custom.js"></script>
+

@@ -17,13 +17,13 @@ $page = $uri->getSegment(count($pages));
     <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/styles/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
 
-    <link rel="stylesheet" type="text/css" href="public/assets/styles/bootstrap4/bootstrap.min.css">
-    <link href="public/assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="public/assets/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="public/assets/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-    <link rel="stylesheet" type="text/css" href="public/assets/plugins/OwlCarousel2-2.2.1/animate.css">
-    <link rel="stylesheet" type="text/css" href="public/assets/styles/main_styles.css">
-    <link rel="stylesheet" type="text/css" href="public/assets/styles/responsive.css">
+    <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/styles/bootstrap4/bootstrap.min.css">
+    <link href="<?=base_url(); ?>public/assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/plugins/OwlCarousel2-2.2.1/animate.css">
+    <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/styles/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/styles/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Modal styles */
@@ -273,7 +273,12 @@ $page = $uri->getSegment(count($pages));
         <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/styles/contact_styles.css">
         <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/styles/contact_responsive.css">
 
-        <?php } ?>
+        <?php }else if($page == 'category'){ ?>
+            <link rel="stylesheet" type="text/css" href="public/assets/plugins/jquery-ui-1.12.1.custom/jquery-ui.css">
+            <link rel="stylesheet" type="text/css" href="public/assets/styles/categories_styles.css">
+            <link rel="stylesheet" type="text/css" href="public/assets/styles/categories_responsive.css">
+
+            <?php } ?>
 </head>
 
 <body>
