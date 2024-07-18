@@ -12,6 +12,7 @@ $routes->get('addtocart', 'Home::AddCart');
 $routes->get('category', 'Home::Category');
 
 
+$routes->post('sendotp', 'RegistrationController::sendOtp');
 $routes->post('register', 'RegistrationController::register');
 
 $routes->get('raiseaticket', 'Home::raiseaticket');
