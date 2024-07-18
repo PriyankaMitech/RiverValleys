@@ -21,11 +21,11 @@ class RegistrationController extends Controller
                     
                 ];
 
-                $model->insert($data);
-                return redirect()->to('/'); // redirect to a success page or another action
-            } 
+        $model->insert($data);
+        return redirect()->to('/'); // redirect to a success page or another action
+    } 
             // return redirect()->to('/success');
-        }
+}
     
         
     
