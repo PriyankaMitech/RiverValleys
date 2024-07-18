@@ -234,10 +234,10 @@ class Home extends BaseController
         }
 
 
-        public function Register()
-        {
-            echo view('Register');
-        }
+        // public function Register()
+        // {
+        //     echo view('Register');
+        // }
     
         if ($this->request->getFile('product_image3')->isValid()) {
             $image3 = $this->request->getFile('product_image3');

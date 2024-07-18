@@ -77,15 +77,19 @@
             </div>
         </footer>
     </div>
-    <?php if ($page == 'RiverValleys') { ?>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <script src="<?=base_url(); ?>public/assets/plugins/Isotope/isotope.pkgd.min.js"></script>
-        <script src="<?=base_url(); ?>public/assets/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-        <script src="<?=base_url(); ?>public/assets/plugins/easing/easing.js"></script>
-        <script src="<?=base_url(); ?>public/assets/js/custom.js"></script>
 
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="<?=base_url(); ?>public/assets/styles/bootstrap4/bootstrap.min.js"></script>
+    <script src="<?=base_url(); ?>public/assets/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+    <script src="<?=base_url(); ?>public/assets/plugins/easing/easing.js"></script>
+    <script src="<?=base_url(); ?>public/assets/plugins/Isotope/isotope.pkgd.min.js"></script>
+
+    <script src="<?=base_url(); ?>public/assets/js/custom.js"></script>
+
+    
+    <?php if ($page == 'RiverValleys') { ?>
         
         <script>
         $(document).ready(function() {
@@ -109,16 +113,84 @@
         });
         </script>
     <?php }else if ($page == 'raiseaticket') { ?>
-        <script src="<?=base_url(); ?>public/assets/js/jquery-3.2.1.min.js"></script>
         <script src="<?=base_url(); ?>public/assets/styles/bootstrap4/popper.js"></script>
-        <script src="<?=base_url(); ?>public/assets/styles/bootstrap4/bootstrap.min.js"></script>
-        <script src="<?=base_url(); ?>public/assets/plugins/Isotope/isotope.pkgd.min.js"></script>
-        <script src="<?=base_url(); ?>public/assets/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-        <script src="<?=base_url(); ?>public/assets/plugins/easing/easing.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
         <script src="<?=base_url(); ?>public/assets/plugins/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
         <script src="<?=base_url(); ?>public/assets/js/contact_custom.js"></script>
     <?php } ?>
+
+
+
+     <!-- CDN for jQuery -->
+
+
+    <script>
+        $(document).ready(function () {
+            // Check if the modal is triggered correctly
+            $('#exampleModal').on('show.bs.modal', function (e) {
+                console.log('Modal is triggered and will be shown.');
+            });
+
+            // Ensure content inside modal is loaded correctly
+            $('#exampleModal').on('shown.bs.modal', function (e) {
+                console.log('Modal is now visible.');
+            });
+        });
+    </script>
+    <script>
+    const input = document.querySelector("#mobileNumber");
+    const errorMsg = document.querySelector("#mobileNumberError");
+    const form = document.querySelector("#registrationForm");
+
+    const iti = window.intlTelInput(input, {
+        initialCountry: "auto",
+        separateDialCode: true,
+        geoIpLookup: function(callback) {
+            fetch('https://ipinfo.io/json', { headers: { 'Accept': 'application/json' }})
+                .then(response => response.json())
+                .then(data => callback(data.country))
+                .catch(() => callback('us'));
+        },
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+    const errorMsg = document.getElementById("errorMsg");
+    errorMsg.style.display = 'none';
+});
+
+
+    input.addEventListener('input', function() {
+        const isNumeric = /^\d+$/;
+        const maxLength = iti.getSelectedCountryData().dialCode.length + 10;
+        let value = input.value.replace(/\D/g, '');
+
+        if (value.length > maxLength) {
+            value = value.substring(0, maxLength);
+        }
+
+        input.value = value;
+
+        if (iti.isValidNumber() && isNumeric.test(value)) {
+            input.classList.remove("is-invalid");
+            errorMsg.style.display = 'none';
+        } else {
+            input.classList.add("is-invalid");
+            errorMsg.style.display = 'block';
+        }
+    });
+
+    input.addEventListener('countrychange', function() {
+        const isValid = iti.isValidNumber();
+        if (isValid) {
+            input.classList.remove("is-invalid");
+            errorMsg.style.display = 'none';
+        } else {
+            input.classList.add("is-invalid");
+            errorMsg.style.display = 'block';
+        }
+    });
+</script>
     
 </body>
 </html>
