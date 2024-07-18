@@ -1,0 +1,244 @@
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 150%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+.modal.fade .modal-dialog {
+    transform: translate(0, -100%);
+    transition: transform 1s ease-out;
+}
+
+.modal.show .modal-dialog {
+    transform: translate(0, 0);
+}
+.modal-content {
+    background-color: transparent;
+    margin-left: -30rem;
+    padding: 20px;
+    border: none;
+    width: 150%;
+    border-radius: 50%;
+    animation: modalFadeIn 0.5s ease-in-out;
+   
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Second Navbar */
+.second_nav_container {
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #f8f8f8;
+    width: 100%;
+}
+
+.second_navbar {
+    padding: 10px 0;
+}
+
+.second_navbar_menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.second_navbar_menu li {
+    margin: 0 10px;
+    position: relative;
+}
+
+.second_navbar_menu a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dropdown_container {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Submenu Items */
+.dropdown_menu>li {
+    display: inline-block;
+    /* Change from block to inline-block */
+    margin-right: 10px;
+    /* Optional: Add space between items */
+}
+
+.submenu {
+    display: none;
+}
+
+.dropdown:hover .dropdown_container {
+    display: block;
+    width: auto;
+    /* Ensure it doesn't force items into new lines */
+    white-space: nowrap;
+    /* Prevent line breaks */
+}
+
+.dropdown_container ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.dropdown_container a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown_container a:hover {
+    background-color: #ddd;
+}
+
+.submenu>li {
+    display: inline-block;
+    margin-right: 10px;
+    /* Space between submenu items */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar_menu,
+    .navbar_user {
+        margin-top: 10px;
+    }
+
+    .navbar_menu li,
+    .navbar_user li {
+        margin: 0;
+        padding: 5px 0;
+        text-align: center;
+    }
+
+    .second_navbar_menu {
+        flex-wrap: wrap;
+    }
+
+    .second_navbar_menu li {
+        margin: 5px;
+    }
+
+    .dropdown_container {
+        position: static;
+        display: none;
+        padding: 0;
+        border: none;
+        background: transparent;
+    }
+
+    .dropdown:hover .dropdown_container {
+        display: block;
+    }
+
+    .dropdown_menu ul {
+        position: static;
+        display: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .dropdown:hover .dropdown_menu ul {
+        display: block;
+        position: static;
+    }
+}
+
+form h2 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: #5b7827;
+    transition: color 0.3s, transform 0.3s;
+    padding-top: 2rem;
+    padding-bottom: 0.8rem;
+}
+form h2:hover {
+    color: #0e6230;
+    transform: scale(1.1);
+}
+
+.form-OTP{
+    display: none
+}
+#submitotp{
+    padding-left: 10px;
+}
+#submitotp:hover {
+background-color: #0056b3;
+border-color: #0056b3;
+}
+.offset-xl-1 {
+margin-left: 1.333333%;
+}
+.rounded {
+border-radius: 16.50rem !important;
+}
+.ribbon-container {
+    position: relative;
+    text-align: center;
+    margin-bottom: 0rem;
+    background: none;
+}
+
+.ribbon {
+    width: 188px;
+    height: auto;
+    background: transparent;
+    margin-left: 19rem !important;
+    margin-top: -17rem;
+    margin-bottom: -10rem;
+}
+.registercircle{
+    background: linear-gradient(to right, #040505, #266b49, #88e0d6, #b9e5e0); 
+    border-radius: 50%; 
+    width: 96%; 
+    margin-top: -5rem; 
+    margin-left: 4rem;
+}
+.imgfluidlogo {
+    height: auto;
+    border-radius: 100%;
+    width: 6rem;
+    background-color: transparent;
+    margin-top: -4rem;
+    margin-right: 4rem;
+}
+.invalid-feedback{
+    color: black;
+    padding-left: 1rem;
+}
