@@ -10,6 +10,9 @@ $routes->get('header', 'Home::Header');
 $routes->get('footer', 'Home::Footer');
 $routes->get('addtocart', 'Home::AddCart');
 $routes->get('category', 'Home::Category');
+// $routes->get('product_details', 'Home::Product');
+$routes->get('product_details', 'Home::productDetails');
+
 
 
 $routes->post('sendotp', 'RegistrationController::sendOtp');
