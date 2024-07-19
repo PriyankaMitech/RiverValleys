@@ -985,4 +985,55 @@ textarea:hover {
   background: #fe7c7f;
 }
 
+.contact-page .raise-ticket-blog{
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+background-color: #9fe3e6;
+
+}
+.contact-page .shipping-traking-blog{
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+background: aqua;
+
+
+}
+.contact-page .benefit_icon i {
+  font-size: 40px;
+  color: #000000 !important;
+}
+
+.full-contact-page {
+          background-image: url('http://localhost/RiverValleys/public/images/rose-petals.png');
+          background-size: cover;
+          background-position: center;
+          padding: 50px 0;
+      }
+
+      .contact-page .contact_contents, .get_in_touch_contents {
+          background: rgba(255, 255, 255, 0.8); /* Adding a white background with some transparency */
+          padding: 20px;
+          border-radius: 8px;
+      }
+  .contact_contents, .get_in_touch_contents {
+  background: rgb(255 255 255 / 101%) !important;
+
+}
+.contact-page .benefit_item {
+  height: 164px;
+}
+.contact-page .benefit_icon img{
+width: 100%;
+height:auto;
+border-radius: 10px;
+}
+.contact-page .benefit_content h6 {
+  font-size: 17px;
+  font-weight: 800;
+  padding-bottom: 12px;
+}
 /*********************************
+
+
+
+
