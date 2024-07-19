@@ -57,7 +57,7 @@
 		<div class="benefit pb-5">
 			<div class="container">
 				<div class="row benefit_row">
-					<div class="col-lg-6 benefit_col">
+					<div class="col-lg-6 ">
 						<a href="link1.html"> <!-- Add your desired link here -->
 							<div class="benefit_item d-flex flex-row align-items-center">
 								<div class="benefit_icon"><i class="fa fa-truck" aria-hidden="true"></i></div>
@@ -68,7 +68,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-lg-6 benefit_col">
+					<div class="col-lg-6 ">
 						<a href="<?=base_url();?>raiseaticket"> <!-- Add your desired link here -->
 							<div class="benefit_item d-flex flex-row align-items-center">
 								<div class="benefit_icon"><i class="fa fa-money" aria-hidden="true"></i></div>
