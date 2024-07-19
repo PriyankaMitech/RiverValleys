@@ -170,8 +170,7 @@
     <div class="container">
         <div class="row">
             <div class="main_slider_content2">
-                <img src="http://localhost/RiverValleys/public/assets/images/RV11.png" class="heading_center_image3"
-                    alt="New Image">
+                <img src="http://localhost/RiverValleys/public/assets/images/RV11.png" class="heading_center_image3" alt="New Image">
                 <h1 class="centered_text3">Mixed Product</h1>
             </div>
         </div>
@@ -179,14 +178,10 @@
             <div class="col text-center">
                 <div class="new_arrivals_sorting">
                     <ul class="arrivals_grid_sorting clearfix button-group filters-button-group">
-                        <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center active is-checked"
-                            data-filter="*">all</li>
-                        <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center"
-                            data-filter=".women">women's</li>
-                        <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center"
-                            data-filter=".accessories">accessories</li>
-                        <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center"
-                            data-filter=".men">men's</li>
+                        <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center active is-checked" data-filter="*">all</li>
+                        <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".women">women's</li>
+                        <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".accessories">accessories</li>
+                        <li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".men">men's</li>
                     </ul>
                 </div>
             </div>
@@ -199,16 +194,14 @@
                     <div class="product-item men">
                         <div class="product discount product_filter">
                             <div class="product_image">
-                                <img src="public/assets/images/MakeUpForever.png" alt="">
+                                <a href="single.html" target="_blank"><img src="public/assets/images/MakeUpForever.png" alt=""></a>
                             </div>
                             <div class="favorite favorite_left"></div>
-                            <div
-                                class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center">
+                            <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center">
                                 <span>-$20</span>
                             </div>
                             <div class="product_info">
-                                <h6 class="product_name"><a href="single.html">Fujifilm X100T 16 MP Digital Camera
-                                        (Silver)</a></h6>
+                                <h6 class="product_name"><a href="single.html" target="_blank">Fujifilm X100T 16 MP Digital Camera (Silver)</a></h6>
                                 <div class="product_price">$520.00<span>$590.00</span></div>
                             </div>
                         </div>
@@ -221,16 +214,14 @@
                     <div class="product-item women">
                         <div class="product product_filter">
                             <div class="product_image">
-                                <img src="public/assets/images/ULTRAHDSTICKFOUNDATION.webp" alt="">
+                                <a href="single.html" target="_blank"><img src="public/assets/images/ULTRAHDSTICKFOUNDATION.webp" alt=""></a>
                             </div>
                             <div class="favorite"></div>
-                            <div
-                                class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center">
+                            <div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center">
                                 <span>new</span>
                             </div>
                             <div class="product_info">
-                                <h6 class="product_name"><a href="single.html">Samsung CF591 Series Curved 27-Inch FHD
-                                        Monitor</a></h6>
+                                <h6 class="product_name"><a href="single.html" target="_blank">Samsung CF591 Series Curved 27-Inch FHD Monitor</a></h6>
                                 <div class="product_price">$610.00</div>
                             </div>
                         </div>
@@ -243,12 +234,11 @@
                     <div class="product-item women">
                         <div class="product product_filter">
                             <div class="product_image">
-                                <img src="public/assets/images/Coverfx.jpg" alt="">
+                                <a href="single.html" target="_blank"><img src="public/assets/images/Coverfx.jpg" alt=""></a>
                             </div>
                             <div class="favorite"></div>
                             <div class="product_info">
-                                <h6 class="product_name"><a href="single.html">Blue Yeti USB Microphone Blackout
-                                        Edition</a></h6>
+                                <h6 class="product_name"><a href="single.html" target="_blank">Blue Yeti USB Microphone Blackout Edition</a></h6>
                                 <div class="product_price">$120.00</div>
                             </div>
                         </div>
@@ -261,16 +251,14 @@
                     <div class="product-item accessories">
                         <div class="product product_filter">
                             <div class="product_image">
-                                <img src="public/assets/images/Foundation.jpg" alt="">
+                                <a href="single.html" target="_blank"><img src="public/assets/images/Foundation.jpg" alt=""></a>
                             </div>
-                            <div
-                                class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center">
+                            <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center">
                                 <span>sale</span>
                             </div>
                             <div class="favorite favorite_left"></div>
                             <div class="product_info">
-                                <h6 class="product_name"><a href="single.html">DYMO LabelWriter 450 Turbo Thermal Label
-                                        Printer</a></h6>
+                                <h6 class="product_name"><a href="single.html" target="_blank">DYMO LabelWriter 450 Turbo Thermal Label Printer</a></h6>
                                 <div class="product_price">$410.00</div>
                             </div>
                         </div>
@@ -283,12 +271,11 @@
                     <div class="product-item women men">
                         <div class="product product_filter">
                             <div class="product_image">
-                                <img src="public/assets/images/penny.webp" alt="">
+                                <a href="single.html" target="_blank"><img src="public/assets/images/penny.webp" alt=""></a>
                             </div>
                             <div class="favorite"></div>
                             <div class="product_info">
-                                <h6 class="product_name"><a href="single.html">Pryma Headphones, Rose Gold & Grey</a>
-                                </h6>
+                                <h6 class="product_name"><a href="single.html" target="_blank">Pryma Headphones, Rose Gold & Grey</a></h6>
                                 <div class="product_price">$180.00</div>
                             </div>
                         </div>
@@ -301,16 +288,14 @@
                     <div class="product-item accessories">
                         <div class="product discount product_filter">
                             <div class="product_image">
-                                <img src="public/assets/images/ULTRAHDSTICKFOUNDATION.webp" alt="">
+                                <a href="single.html" target="_blank"><img src="public/assets/images/ULTRAHDSTICKFOUNDATION.webp" alt=""></a>
                             </div>
                             <div class="favorite favorite_left"></div>
-                            <div
-                                class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center">
+                            <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center">
                                 <span>-$20</span>
                             </div>
                             <div class="product_info">
-                                <h6 class="product_name"><a href="#single.html">Fujifilm X100T 16 MP Digital Camera
-                                        (Silver)</a></h6>
+                                <h6 class="product_name"><a href="single.html" target="_blank">Fujifilm X100T 16 MP Digital Camera (Silver)</a></h6>
                                 <div class="product_price">$520.00<span>$590.00</span></div>
                             </div>
                         </div>
@@ -323,12 +308,11 @@
                     <div class="product-item women">
                         <div class="product product_filter">
                             <div class="product_image">
-                                <img src="public/assets/images/penny.webp" alt="">
+                                <a href="single.html" target="_blank"><img src="public/assets/images/penny.webp" alt=""></a>
                             </div>
                             <div class="favorite"></div>
                             <div class="product_info">
-                                <h6 class="product_name"><a href="single.html">Samsung CF591 Series Curved 27-Inch FHD
-                                        Monitor</a></h6>
+                                <h6 class="product_name"><a href="single.html" target="_blank">Samsung CF591 Series Curved 27-Inch FHD Monitor</a></h6>
                                 <div class="product_price">$610.00</div>
                             </div>
                         </div>
@@ -341,12 +325,11 @@
                     <div class="product-item accessories">
                         <div class="product product_filter">
                             <div class="product_image">
-                                <img src="public/assets/images/Foundation.jpg" alt="">
+                                <a href="single.html" target="_blank"><img src="public/assets/images/Foundation.jpg" alt=""></a>
                             </div>
                             <div class="favorite"></div>
                             <div class="product_info">
-                                <h6 class="product_name"><a href="single.html">Blue Yeti USB Microphone Blackout
-                                        Edition</a></h6>
+                                <h6 class="product_name"><a href="single.html" target="_blank">Blue Yeti USB Microphone Blackout Edition</a></h6>
                                 <div class="product_price">$120.00</div>
                             </div>
                         </div>
@@ -359,16 +342,14 @@
                     <div class="product-item men">
                         <div class="product product_filter">
                             <div class="product_image">
-                                <img src="public/assets/images/Coverfx.jpg" alt="">
+                                <a href="single.html" target="_blank"><img src="public/assets/images/Coverfx.jpg" alt=""></a>
                             </div>
-                            <div
-                                class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center">
+                            <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center">
                                 <span>sale</span>
                             </div>
                             <div class="favorite favorite_left"></div>
                             <div class="product_info">
-                                <h6 class="product_name"><a href="single.html">DYMO LabelWriter 450 Turbo Thermal Label
-                                        Printer</a></h6>
+                                <h6 class="product_name"><a href="single.html" target="_blank">DYMO LabelWriter 450 Turbo Thermal Label Printer</a></h6>
                                 <div class="product_price">$410.00</div>
                             </div>
                         </div>
@@ -381,12 +362,11 @@
                     <div class="product-item men">
                         <div class="product product_filter">
                             <div class="product_image">
-                                <img src="public/assets/images/MakeUpForever.png" alt="">
+                                <a href="single.html" target="_blank"><img src="public/assets/images/MakeUpForever.png" alt=""></a>
                             </div>
                             <div class="favorite"></div>
                             <div class="product_info">
-                                <h6 class="product_name"><a href="single.html">Pryma Headphones, Rose Gold & Grey</a>
-                                </h6>
+                                <h6 class="product_name"><a href="single.html" target="_blank">Pryma Headphones, Rose Gold & Grey</a></h6>
                                 <div class="product_price">$180.00</div>
                             </div>
                         </div>
@@ -394,18 +374,16 @@
                             <a href="<?php echo base_url('addtocart?id=1'); ?>">add to cart</a>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
-        <img src="http://localhost/RiverValleys/public/assets/images/RV30.png" alt="Right Corner Image"
-            class="corner_image top_right_image30">
-        <img src="http://localhost/RiverValleys/public/assets/images/RV31.png" alt="Left Corner Image"
-            class="corner_image top_left_image31">
+        <img src="http://localhost/RiverValleys/public/assets/images/RV30.png" alt="Right Corner Image" class="corner_image top_right_image30">
+        <img src="http://localhost/RiverValleys/public/assets/images/RV31.png" alt="Left Corner Image" class="corner_image top_left_image31">
     </div>
 </div>
 
 <!-- Brand Section -->
-
 <div class="brand_section">
     <div class="brand_slider">
         <div class="brand_item"><img src="public/assets/images/brand1.png" alt="Brand 1"></div>
@@ -415,6 +393,17 @@
         <div class="brand_item"><img src="public/assets/images/brand5.png" alt="Brand 5"></div>
     </div>
 </div>
+
+<div class="brand_section2">
+    <div class="brand_slider2">
+        <div class="brand_item2"><img src="public/assets/images/brand6.png" alt="Brand 6"></div>
+        <div class="brand_item2"><img src="public/assets/images/brand7.png" alt="Brand 7"></div>
+        <div class="brand_item2"><img src="public/assets/images/brand8.png" alt="Brand 8"></div>
+        <div class="brand_item2"><img src="public/assets/images/brand9.png" alt="Brand 9"></div>
+        <div class="brand_item2"><img src="public/assets/images/brand10.png" alt="Brand 10"></div>
+    </div>
+</div>
+
 <div class="best_sellers">
     <div class="container">
         <div class="row">

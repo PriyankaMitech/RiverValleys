@@ -250,39 +250,37 @@
     z-index: 11;
 }
 
-
 .brand_section {
     margin-top: 50px;
     overflow: hidden;
     position: relative;
-    width: 100%;
+    max-width: 100%;
+    height: 150px;
     background-color: #f1e2cb;
-  
 }
-
 
 .brand_slider {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    animation: slide 15s linear infinite;
+    animation: slide-left 15s linear infinite;
 }
 
 .brand_item {
     flex: 0 0 auto;
-    width: 100px; /* Adjust the width as needed */
+    width: 150px; /* Adjust the width as needed */
     height: 100px; /* Adjust the height as needed */
     margin: 0 20px; /* Adjust the margin as needed */
 }
 
 .brand_item img {
     width: 100%;
-    height: 100%;
+    height: 150%;
     object-fit: contain;
 }
 
-@keyframes slide {
+@keyframes slide-left {
     0% {
         transform: translateX(100%);
     }
@@ -290,6 +288,47 @@
         transform: translateX(-100%);
     }
 }
+
+.brand_section2 {
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+    height: 150px;
+    background-color: #e2f1cb;
+}
+
+.brand_slider2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    height: 150px;
+    animation: slide-right 15s linear infinite;
+}
+
+.brand_item2 {
+    flex: 0 0 auto;
+    width: 150px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    margin: 0 20px; /* Adjust the margin as needed */
+}
+
+.brand_item2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
 .product_image img {
     display: block; /* Ensure images behave as block elements */
     width: 100%; /* Ensure images take full width of their container */
@@ -457,6 +496,8 @@
     transform: rotateY(180deg);
 }
 
-
+.owl-carousel .owl-item img {
+    border-radius: 25%;
+}
 
 

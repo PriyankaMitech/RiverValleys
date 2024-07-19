@@ -80,17 +80,19 @@
                     <div class="col-lg-3 thumbnails_col order-lg-1 order-2">
                         <div class="single_product_thumbnails">
                             <ul>
-                                <li><img src="public/assets/images/single_1_thumb.jpg" alt="" data-image="public/assets/images/single_1.jpg"></li>
-                                <li class="active"><img src="public/assets/images/single_2_thumb.jpg" alt=""
-                                        data-image="public/assets/images/single_2.jpg"></li>
-                                <li><img src="public/assets/images/single_3_thumb.jpg" alt="" data-image="public/assets/images/single_3.jpg"></li>
+                                <li><img src="public/assets/images/MakeUpForever.png" alt=""
+                                        data-image="public/assets/images/MakeUpForever.png"></li>
+                                <li class="active"><img src="public/assets/images/MakeUpForever.png" alt=""
+                                        data-image="public/assets/images/MakeUpForever.png"></li>
+                                <li><img src="public/assets/images/MakeUpForever.png" alt=""
+                                        data-image="public/assets/images/MakeUpForever.png"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-9 image_col order-lg-2 order-1">
                         <div class="single_product_image">
                             <div class="single_product_image_background"
-                                style="background-image:url(public/assets/images/single_2.jpg)"></div>
+                                style="background-image:url(public/assets/images/MakeUpForever.png)"></div>
                         </div>
                     </div>
                 </div>
@@ -99,15 +101,15 @@
         <div class="col-lg-5">
             <div class="product_details">
                 <div class="product_details_title">
-                    <h2>Pocket cotton sweatshirt</h2>
-                    <p>Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque
-                        diam dolor, elementum etos lobortis des mollis ut...</p>
+                    <h2>Make up For Ever</h2>
+                    <p>A long-wearing, lightweight liquid foundation that provides medium to full coverage with a
+                        natural finish....</p>
                 </div>
                 <div class="free_delivery d-flex flex-row align-items-center justify-content-center">
                     <span class="ti-truck"></span><span>free delivery</span>
                 </div>
-                <div class="original_price">$629.99</div>
-                <div class="product_price">$495.00</div>
+                <div class="original_price">$590.00</div>
+                <div class="product_price">$520.00</div>
                 <ul class="star_rating">
                     <li><i class="fa fa-star" aria-hidden="true"></i></li>
                     <li><i class="fa fa-star" aria-hidden="true"></i></li>

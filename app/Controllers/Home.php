@@ -283,6 +283,11 @@ class Home extends BaseController
         echo view('Register');
     }
 
+    public function productDetails()
+    {
+        // Ensure the view file name is correct
+        return view('product_details');
+    }
 
     public function get_localbrand_list() 
     {
