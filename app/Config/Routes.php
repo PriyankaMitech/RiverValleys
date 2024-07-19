@@ -15,6 +15,8 @@ $routes->get('category', 'Home::Category');
 $routes->post('register', 'RegistrationController::register');
 
 $routes->get('raiseaticket', 'Home::raiseaticket');
+$routes->get('contact', 'Home::contact');
+
 
 $routes->get('admindashboard', 'Home::admindashboard');
 
@@ -43,6 +45,8 @@ $routes->get('editproduct/(:any)', 'Home::addproduct/$1');
 $routes->get('localbrandlist', 'Home::get_localbrand_list');
 $routes->get('editlocalbrand/(:any)', 'Home::get_localbrand_list/$1');
 $routes->post('setlocalbrand', 'Home::setlocalbrand');
+
+
 
 
 

@@ -33,6 +33,10 @@ class Home extends BaseController
     {
         return view('raiseaticket');
     }
+    public function contact()
+    {
+        return view('contact');
+    }
     public function admindashboard() 
     {
         return view('Admin/admindashboard');

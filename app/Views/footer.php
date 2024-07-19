@@ -25,7 +25,7 @@
                                     <li><a href="#">Store Locator</a></li>
                                     <li><a href="#">Frequently asked questions</a></li>
                                     <li><a href="#">Contact Us</a></li>
-                                    <li><a href="<?=base_url(); ?>raiseaticket">Raise a Ticket</a></li>
+                                    <li><a href="<?=base_url(); ?>raiseaticket">Raise Ticket</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -193,7 +193,13 @@
             errorMsg.style.display = 'block';
         }
     });
+    
 </script>
+  <script>
+        document.getElementById('input_website').addEventListener('focus', function() {
+            this.showPicker();
+        });
+    </script>
     
 </body>
 </html>

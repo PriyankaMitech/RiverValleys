@@ -272,12 +272,20 @@ $page = $uri->getSegment(count($pages));
         <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/plugins/jquery-ui-1.12.1.custom/jquery-ui.css">
         <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/styles/contact_styles.css">
         <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/styles/contact_responsive.css">
+        <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/styles/raise_ticket.css">
 
         <?php }else if($page == 'category'){ ?>
             <link rel="stylesheet" type="text/css" href="public/assets/plugins/jquery-ui-1.12.1.custom/jquery-ui.css">
             <link rel="stylesheet" type="text/css" href="public/assets/styles/categories_styles.css">
             <link rel="stylesheet" type="text/css" href="public/assets/styles/categories_responsive.css">
 
+
+        <?php }else if ($page == 'contact') { ?>
+            <link rel="stylesheet" href="<?=base_url(); ?>public/assets/plugins/themify-icons/themify-icons.css">
+            <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/plugins/jquery-ui-1.12.1.custom/jquery-ui.css">
+            <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/styles/contact_styles.css">
+            <link rel="stylesheet" type="text/css" href="<?=base_url(); ?>public/assets/styles/contact_responsive.css">
+      
             <?php } ?>
 </head>
 
@@ -300,7 +308,7 @@ $page = $uri->getSegment(count($pages));
                                     <li><a href="#">Brands</a></li>
                                     <li><a href="#">pages</a></li>
                                     <li><a href="#">blog</a></li>
-                                    <li><a href="contact.html">contact</a></li>
+                                    <li><a href="<?=base_url(); ?>contact">contact</a></li>
                                 </ul>
                                 <ul class="navbar_user">
                                     <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>

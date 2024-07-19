@@ -1,0 +1,66 @@
+.raise_ticket_c .form-background {
+  position: relative;
+  padding: 20px;
+  background-color: #fff; /* Adjust as needed */
+  z-index: 1; /* Ensure form content is above background images */
+}
+
+.raise_ticket_c .form-background::before,
+.raise_ticket_c .form-background::after {
+  content: "";
+  position: absolute;
+  width: 200px; /* Adjust size as needed */
+  height: 200px; /* Adjust size as needed */
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1; /* Ensure background images are below form content */
+}
+
+.raise_ticket_c .form-background::before {
+  background-image: url("http://localhost/RiverValleys/public/assets/images/RV19.png"); /* Replace with your image path */
+  bottom: -85px;
+  left: -95px;
+}
+
+.raise_ticket_c .form-background::after {
+  background-image: url("http://localhost/RiverValleys/public/assets/images/RV18.png"); /* Replace with your image path */
+  top: -77px;
+  right: -79px;
+}
+.raise_ticket_c .button_container {
+  text-align: right; /* Aligns the button to the right */
+  margin-top: 20px; /* Adds space above the button */
+}
+.raise_ticket_c .heading_center_image {
+  transform: translateX(143%);
+  width: 100px;
+  height: auto;
+  z-index: 10;
+  top: -53px;
+}
+.raise_ticket_c .centered_text {
+  transform: translateX(20%);
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 11;
+}
+.raise_ticket_c {
+  margin-top: 185px !important;
+  padding: 0px 20%;
+  border-bottom: solid 0px #ebebeb !important;
+}
+.raise_ticket_c .main_slider_content {
+  left: 91px;
+}
+.raise_ticket_c #input_website,
+#complaintType {
+  color: #b5b5b5; /* Red color */
+}
+
+.raise_ticket_c #input_website::-webkit-calendar-picker-indicator {
+  filter: invert(73%) sepia(0%) saturate(0%) hue-rotate(182deg) brightness(93%)
+    contrast(86%);
+}
